@@ -167,7 +167,7 @@ namespace Enigma
         {
             if (args.Length != 5 && args.Length != 6)
             {
-                Console.WriteLine("program" + " reflector" + " leftRotor" + " centerRotor" + " rightRotor" + " positions" + " [plugboard]");
+                Console.WriteLine(System.AppDomain.CurrentDomain.FriendlyName + " reflector" + " leftRotor" + " centerRotor" + " rightRotor" + " positions" + " [plugboard]");
                 Console.WriteLine("reflector = { B, C }");
                 Console.WriteLine("leftRotor, centerRotor, rightRotor = { I, II, III, IV, V, VI, VII, VIII }");
                 Console.WriteLine("positions: start positions for reflector and all the rotors (example 'ABCD'");
