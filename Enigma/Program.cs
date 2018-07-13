@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Linq;
 
 namespace Enigma
@@ -6,7 +6,7 @@ namespace Enigma
     /// <summary>
     /// Main class
     /// </summary>
-    internal static class Program
+    public static class Program
     {
         // Error codes
         private const int InvalidArguments = 1;
@@ -167,7 +167,7 @@ namespace Enigma
         {
             if (args.Length != 5 && args.Length != 6)
             {
-                Console.WriteLine(System.AppDomain.CurrentDomain.FriendlyName + " reflector" + " leftRotor" + " centerRotor" + " rightRotor" + " positions" + " [plugboard]");
+                Console.WriteLine(AppDomain.CurrentDomain.FriendlyName + " reflector" + " leftRotor" + " centerRotor" + " rightRotor" + " positions" + " [plugboard]");
                 Console.WriteLine("reflector = { B, C }");
                 Console.WriteLine("leftRotor, centerRotor, rightRotor = { I, II, III, IV, V, VI, VII, VIII }");
                 Console.WriteLine("positions: start positions for reflector and all the rotors (example 'ABCD'");
@@ -279,26 +279,29 @@ namespace Enigma
             var machine = new Enigma(_plugboard, left, center, right, reflector);
             machine.SetPositions(posRef, posLeft, posCenter, posRight);
 
-            var s = Console.ReadLine();
+            var message = Console.ReadLine();
+            var messageLetters = "";
 
-            if (s == null)
+            if (message == null)
             {
                 Console.WriteLine("Invalid input.");
                 Environment.Exit(InvalidInput);
             }
 
-            foreach (var ch in s)
+            foreach (var ch in message)
             {
                 if (char.IsUpper(ch))
                 {
-                    continue;
+                    messageLetters += ch;
                 }
-                Console.WriteLine("Invalid character in input (only capital letters allowed).");
-                Environment.Exit(InvalidInput);
+                else if (char.IsLower(ch))
+                {
+                    messageLetters += char.ToUpper(ch);
+                }
             }
 
 
-            var res = s.Aggregate("", (current, t) => current + (char) (machine.Convert(t - 'A') + 'A'));
+            var res = messageLetters.Aggregate("", (current, t) => current + (char) (machine.Convert(t - 'A') + 'A'));
             Console.WriteLine(res);
         }
     }
