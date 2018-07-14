@@ -12,13 +12,13 @@
         /// </summary>
         /// <param name="cipher">Cipher to be used.</param>
         public Reflector(int[] cipher) : base(cipher) { }
-
+        
         /// <summary>
-        /// Position of the rotor.
+        /// Start position of the rotor.
         /// </summary>
-        public int Position
+        public int RingPosition
         {
-            set { _position = value; }
+            set => _ringPosition = value;
         }
     }
 }

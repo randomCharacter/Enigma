@@ -9,6 +9,7 @@
 
         // Position (for elements that are rotatable
         protected int _position;
+        protected int _ringPosition;
 
         // Ciphers
         private readonly int[] _cipher;
@@ -21,6 +22,7 @@
         public Plugboard(int[] cipher)
         {
             _position = 0;
+            _ringPosition = 0;
             _cipher = cipher;
             _invCipher = CreateInvCipher(cipher);
         }
@@ -32,7 +34,7 @@
         /// <returns>Converted value.</returns>
         public int Convert(int value)
         {
-            return ((_cipher[((value + _position) % 26 + 26) % 26] - _position) % 26 + 26) % 26;
+            return ((((_cipher[((((value - _ringPosition) % 26 + 26) % 26 + _position) % 26 + 26) % 26] - _position) % 26 + 26) % 26 + _ringPosition) % 26 + 26) % 26;
         }
 
         /// <summary>
@@ -42,7 +44,7 @@
         /// <returns>Converted value.</returns>
         public int ConvertInv(int value)
         {
-            return ((_invCipher[((value + _position) % 26 + 26) % 26] - _position) % 26 + 26) % 26;
+            return ((((_invCipher[((((value - _ringPosition) % 26 + 26) % 26 + _position) % 26 + 26) % 26] - _position) % 26 + 26) % 26 + _ringPosition) % 26 + 26) % 26;
         }
 
         /// <summary>

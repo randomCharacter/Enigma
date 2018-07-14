@@ -38,5 +38,13 @@ namespace Enigma
         {
             return _notches.Any(t => t == _position);
         }
+        
+        /// <summary>
+        /// Ring position of the rotor.
+        /// </summary>
+        public int Position
+        {
+            set => _position = value;
+        }
     }
 }

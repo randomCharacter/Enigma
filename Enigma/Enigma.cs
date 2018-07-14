@@ -36,12 +36,26 @@
         /// <param name="leftPos">Position of the left rotor.</param>
         /// <param name="centerPos">Position of the center rotor.</param>
         /// <param name="rightPos">Position of the right rotor.</param>
-        public void SetPositions( int reflectorPos, int leftPos, int centerPos, int rightPos)
+        public void SetPositions(int leftPos, int centerPos, int rightPos)
         {
-            _reflector.Position = reflectorPos;
             _left.Position = leftPos;
             _center.Position = centerPos;
             _right.Position = rightPos;
+        }
+        
+        /// <summary>
+        /// Sets position of the rotors.
+        /// </summary>
+        /// <param name="reflectorPos">Position of the reflector.</param>
+        /// <param name="leftPos">Position of the left rotor.</param>
+        /// <param name="centerPos">Position of the center rotor.</param>
+        /// <param name="rightPos">Position of the right rotor.</param>
+        public void SetRingPositions(int reflectorPos, int leftPos, int centerPos, int rightPos)
+        {
+            _reflector.RingPosition = reflectorPos;
+            _left.RingPosition = leftPos;
+            _center.RingPosition = centerPos;
+            _right.RingPosition = rightPos;
         }
 
         /// <summary>

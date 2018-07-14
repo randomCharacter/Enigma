@@ -163,14 +163,15 @@ namespace Enigma
         /// </summary>
         /// <param name="args">Program arguments</param>
         /// <returns><code>true</code> if args are valid, <code>false</code> if they are not.</returns>
-        private static bool ErrorFound(string[] args)
+        private static void CheckForErrors(string[] args)
         {
-            if (args.Length != 5 && args.Length != 6)
+            if (args.Length != 6 && args.Length != 7)
             {
-                Console.WriteLine(AppDomain.CurrentDomain.FriendlyName + " reflector" + " leftRotor" + " centerRotor" + " rightRotor" + " positions" + " [plugboard]");
+                Console.WriteLine(AppDomain.CurrentDomain.FriendlyName + " reflector" + " leftRotor" + " centerRotor" + " rightRotor" + " ringPositions" + "startPositions" + " [plugboard]");
                 Console.WriteLine("reflector = { B, C }");
                 Console.WriteLine("leftRotor, centerRotor, rightRotor = { I, II, III, IV, V, VI, VII, VIII }");
-                Console.WriteLine("positions: start positions for reflector and all the rotors (example 'ABCD'");
+                Console.WriteLine("ringPositions: ring positions for reflector and all the rotors (example 'ABCD'");
+                Console.WriteLine("startPositions: start positions all the rotors (example 'ABC'");
                 Console.WriteLine("plugboard (optional) array of chars (exp. 'ABCDEFGHIJKLMNOPQRSTUVWXZ'");
                 Environment.Exit(InvalidArguments);
             }
@@ -199,7 +200,7 @@ namespace Enigma
 
             if (args[4].Length != 4)
             {
-                Console.WriteLine("Invalid starting positions. (valid example: 'ABCD'");
+                Console.WriteLine("Invalid ring positions. (valid example: 'ABCD'");
                 Environment.Exit(InvalidPositions);
             }
 
@@ -207,23 +208,39 @@ namespace Enigma
             {
                 if (!char.IsUpper(args[4][i]))
                 {
+                    Console.WriteLine("Invalid character in ring positions.");
+                    Console.WriteLine("ring positions must contain 4 capital letters!");
+                    Environment.Exit(InvalidPositions);
+                }
+            }
+            
+            if (args[5].Length != 3)
+            {
+                Console.WriteLine("Invalid starting positions. (valid example: 'ABC'");
+                Environment.Exit(InvalidPositions);
+            }
+            
+            for (var i = 0; i < args[5].Length; i++)
+            {
+                if (!char.IsUpper(args[5][i]))
+                {
                     Console.WriteLine("Invalid character in starting positions.");
-                    Console.WriteLine("starting positions must contain 4 capital letters!");
+                    Console.WriteLine("starting positions must contain 3 capital letters!");
                     Environment.Exit(InvalidPositions);
                 }
             }
 
-            if (args.Length == 6)
+            if (args.Length == 7)
             {
-                if (args[5].Length != Plugboard.Letters)
+                if (args[6].Length != Plugboard.Letters)
                 {
                     Console.WriteLine("Invalid plugboard cipher. (valid example: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ");
                     Environment.Exit(InvalidCipher);
                 }
 
-                for (var i = 0; i < args[5].Length; i++)
+                for (var i = 0; i < args[6].Length; i++)
                 {
-                    if (!char.IsUpper(args[5][i]))
+                    if (!char.IsUpper(args[6][i]))
                     {
                         Console.WriteLine("Invalid character in plugboard cipher.");
                         Console.WriteLine("Plugboard cipher must contain 26 capital letters");
@@ -231,14 +248,12 @@ namespace Enigma
                     }
                 }
 
-                if (args[5].Distinct().Count() != args[5].Length)
+                if (args[6].Distinct().Count() != args[6].Length)
                 {
                     Console.WriteLine("One character can be connected to only one other character.");
                     Environment.Exit(MultipleConnections);
                 }
             }
-
-            return false;
         }
 
         /// <summary>
@@ -247,11 +262,7 @@ namespace Enigma
         /// <param name="args">Program arguments.</param>
         public static void Main(string[] args)
         {
-            if (ErrorFound(args))
-            {
-                return;
-            }
-
+            CheckForErrors(args);
 
             BuildRotors();
             var left = AssignRotor(args[1]);
@@ -261,7 +272,7 @@ namespace Enigma
             BuildReflectors();
             var reflector = AssignReflector(args[0]);
 
-            if (args.Length == 6)
+            if (args.Length == 7)
             {
                 var plugboardCipher = BuildPlugboardCipher(args[6]);
                 BuildPlugboard(plugboardCipher);
@@ -272,12 +283,18 @@ namespace Enigma
             }
 
             var posRef = args[4][0] - 'A';
-            var posLeft = args[4][1] - 'A';
-            var posCenter = args[4][2] - 'A';
-            var posRight = args[4][3] - 'A';
+            var ringLeft = args[4][1] - 'A';
+            var ringCenter = args[4][2] - 'A';
+            var ringRight = args[4][3] - 'A';
+                        
+            var startLeft = args[5][0] - 'A';
+            var startCenter = args[5][1] - 'A';
+            var startRight = args[5][2] - 'A';
+
 
             var machine = new Enigma(_plugboard, left, center, right, reflector);
-            machine.SetPositions(posRef, posLeft, posCenter, posRight);
+            machine.SetRingPositions(posRef, ringLeft, ringCenter, ringRight);
+            machine.SetPositions(startLeft, startCenter, startRight);
 
             var message = Console.ReadLine();
             var messageLetters = "";
