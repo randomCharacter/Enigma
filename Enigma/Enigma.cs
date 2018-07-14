@@ -32,16 +32,16 @@
         /// <summary>
         /// Sets position of the rotors.
         /// </summary>
+        /// <param name="reflectorPos">Position of the reflector.</param>
         /// <param name="leftPos">Position of the left rotor.</param>
         /// <param name="centerPos">Position of the center rotor.</param>
         /// <param name="rightPos">Position of the right rotor.</param>
-        /// <param name="reflectorPos">Position of the reflector.</param>
-        public void SetPositions(int leftPos, int centerPos, int rightPos, int reflectorPos)
+        public void SetPositions( int reflectorPos, int leftPos, int centerPos, int rightPos)
         {
+            _reflector.Position = reflectorPos;
             _left.Position = leftPos;
             _center.Position = centerPos;
             _right.Position = rightPos;
-            _reflector.Position = reflectorPos;
         }
 
         /// <summary>
@@ -61,7 +61,7 @@
             res = _left.ConvertInv(res);
             res = _center.ConvertInv(res);
             res = _right.ConvertInv(res);
-            res = _plugboard.ConvertInv(res);
+            res = _plugboard.Convert(res);
             return res;
         }
 
