@@ -155,8 +155,8 @@ public partial class MainWindow : Gtk.Window
 
         return cipher;
     }
-   
-    protected void SelectPlugboard(object sender, EventArgs e)
+
+    private void SelectPlugboard(object sender, EventArgs e)
     {
 
         var value = ((ComboBox)sender).Name;
@@ -174,14 +174,28 @@ public partial class MainWindow : Gtk.Window
         }
     }
 
-    protected string GetPlugboardString()
+    private string GetPlugboardString()
     {
         ComboBox[] boxes = { A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z };
         return boxes.Aggregate("", (current, box) => current + (box.ActiveText ?? box.Name));
     }
 
-    protected void ButtonClick(object sender, EventArgs e)
+    private bool ErrorsFound()
     {
+        return (rotorLeftType.ActiveText == rotorCenterType.ActiveText) ||
+               (rotorLeftType.ActiveText == rotorRightType.ActiveText) ||
+               (rotorRightType.ActiveText == rotorCenterType.ActiveText);
+    }
+
+    private void ButtonClick(object sender, EventArgs e)
+    {
+        if (ErrorsFound())
+        {
+            var errorMessage = new MessageDialog(this, DialogFlags.DestroyWithParent, MessageType.Error, ButtonsType.None, 
+                "Wrong pararameters\nOne rotor can not be used twice");
+            errorMessage.ShowAll();
+            return;
+        }
         BuildRotors();
         var left = AssignRotor(rotorLeftType.ActiveText);
         var center = AssignRotor(rotorCenterType.ActiveText);
