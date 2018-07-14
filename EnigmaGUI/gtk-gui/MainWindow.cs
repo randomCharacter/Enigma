@@ -3,37 +3,37 @@
 
 public partial class MainWindow
 {
-	private global::Gtk.VBox vbox4;
+	private global::Gtk.VBox mainContainer;
 
-	private global::Gtk.Frame frame3;
+	private global::Gtk.Frame reflectorFrame;
 
-	private global::Gtk.Alignment GtkAlignment;
+	private global::Gtk.Alignment reflectorAlignment;
 
-	private global::Gtk.VBox vbox8;
+	private global::Gtk.VBox reflectorMainContainer;
 
-	private global::Gtk.HBox hbox6;
+	private global::Gtk.HBox reflectorContainer1;
 
-	private global::Gtk.Label label8;
+	private global::Gtk.Label reflectorTypeLabel;
 
 	private global::Gtk.ComboBox reflectorType;
 
-	private global::Gtk.HBox hbox7;
+	private global::Gtk.HBox reflectorContainer2;
 
-	private global::Gtk.Label label41;
+	private global::Gtk.Label reflectorPositionLabel;
 
 	private global::Gtk.ComboBox reflectorPosition;
 
-	private global::Gtk.Label GtkLabel;
+	private global::Gtk.Label reflectorLabel;
 
-	private global::Gtk.Frame frame4;
+	private global::Gtk.Frame rotorFrame;
 
-	private global::Gtk.Alignment GtkAlignment1;
+	private global::Gtk.Alignment rotorAlignment;
 
-	private global::Gtk.VBox vbox6;
+	private global::Gtk.VBox rotorMainContainer;
 
-	private global::Gtk.HBox hbox9;
+	private global::Gtk.HBox rotorContainer1;
 
-	private global::Gtk.Label label13;
+	private global::Gtk.Label rotorTypesLabel;
 
 	private global::Gtk.ComboBox rotorLeftType;
 
@@ -41,23 +41,33 @@ public partial class MainWindow
 
 	private global::Gtk.ComboBox rotorRightType;
 
-	private global::Gtk.HBox hbox10;
+	private global::Gtk.HBox rotorContainer2;
 
-	private global::Gtk.Label label14;
+	private global::Gtk.Label rotorRingPositionsLabel;
 
-	private global::Gtk.ComboBox rotorLeftPosotion;
+	private global::Gtk.ComboBox rotorLeftRingPosition;
 
-	private global::Gtk.ComboBox rotorCenterPosition;
+	private global::Gtk.ComboBox rotorCenterRingPosition;
 
-	private global::Gtk.ComboBox rotorRightPosition;
+	private global::Gtk.ComboBox rotorRightRingPosition;
 
-	private global::Gtk.Label GtkLabel1;
+	private global::Gtk.HBox rotorContainer3;
 
-	private global::Gtk.Frame plugboard1;
+	private global::Gtk.Label rotorStartPositionsLabel;
 
-	private global::Gtk.Alignment GtkAlignment2;
+	private global::Gtk.ComboBox rotorLeftStartPosition;
 
-	private global::Gtk.Table plugboard_table;
+	private global::Gtk.ComboBox rotorCenterStartPosition;
+
+	private global::Gtk.ComboBox rotorRightStartPosition;
+
+	private global::Gtk.Label rotorLabel;
+
+	private global::Gtk.Frame plugboardFrame;
+
+	private global::Gtk.Alignment plugboardAlignment;
+
+	private global::Gtk.Table plugboard;
 
 	private global::Gtk.ComboBox A;
 
@@ -83,57 +93,57 @@ public partial class MainWindow
 
 	private global::Gtk.ComboBox L;
 
-	private global::Gtk.Label label15;
+	private global::Gtk.Label letter;
 
-	private global::Gtk.Label label16;
+	private global::Gtk.Label letter1;
 
-	private global::Gtk.Label label17;
+	private global::Gtk.Label letter10;
 
-	private global::Gtk.Label label18;
+	private global::Gtk.Label letter11;
 
-	private global::Gtk.Label label19;
+	private global::Gtk.Label letter12;
 
-	private global::Gtk.Label label20;
+	private global::Gtk.Label letter13;
 
-	private global::Gtk.Label label21;
+	private global::Gtk.Label letter14;
 
-	private global::Gtk.Label label22;
+	private global::Gtk.Label letter15;
 
-	private global::Gtk.Label label23;
+	private global::Gtk.Label letter16;
 
-	private global::Gtk.Label label24;
+	private global::Gtk.Label letter17;
 
-	private global::Gtk.Label label25;
+	private global::Gtk.Label letter18;
 
-	private global::Gtk.Label label26;
+	private global::Gtk.Label letter19;
 
-	private global::Gtk.Label label27;
+	private global::Gtk.Label letter2;
 
-	private global::Gtk.Label label28;
+	private global::Gtk.Label letter20;
 
-	private global::Gtk.Label label29;
+	private global::Gtk.Label letter21;
 
-	private global::Gtk.Label label30;
+	private global::Gtk.Label letter22;
 
-	private global::Gtk.Label label31;
+	private global::Gtk.Label letter23;
 
-	private global::Gtk.Label label32;
+	private global::Gtk.Label letter24;
 
-	private global::Gtk.Label label33;
+	private global::Gtk.Label letter25;
 
-	private global::Gtk.Label label34;
+	private global::Gtk.Label letter3;
 
-	private global::Gtk.Label label35;
+	private global::Gtk.Label letter4;
 
-	private global::Gtk.Label label36;
+	private global::Gtk.Label letter5;
 
-	private global::Gtk.Label label37;
+	private global::Gtk.Label letter6;
 
-	private global::Gtk.Label label38;
+	private global::Gtk.Label letter7;
 
-	private global::Gtk.Label label39;
+	private global::Gtk.Label letter8;
 
-	private global::Gtk.Label label40;
+	private global::Gtk.Label letter9;
 
 	private global::Gtk.ComboBox M;
 
@@ -163,98 +173,103 @@ public partial class MainWindow
 
 	private global::Gtk.ComboBox Z;
 
-	private global::Gtk.Label GtkLabel2;
+	private global::Gtk.Label plugboardLabel;
 
-	private global::Gtk.Frame frame8;
+	private global::Gtk.Button button;
 
-	private global::Gtk.Alignment GtkAlignment3;
+	private global::Gtk.HBox hbox8;
 
-	private global::Gtk.VBox vbox7;
+	private global::Gtk.Frame frame6;
 
-	private global::Gtk.HBox hbox11;
+	private global::Gtk.Alignment GtkAlignment;
 
-	private global::Gtk.ScrolledWindow GtkScrolledWindow;
+	private global::Gtk.ScrolledWindow inputScrolledWindow1;
 
 	private global::Gtk.TextView inputText;
 
-	private global::Gtk.ScrolledWindow decryptedMessage;
+	private global::Gtk.Label inputFrame;
+
+	private global::Gtk.Frame frame7;
+
+	private global::Gtk.Alignment GtkAlignment1;
+
+	private global::Gtk.ScrolledWindow outputScrolledWindow;
 
 	private global::Gtk.TextView outputText;
 
-	private global::Gtk.Button button3;
-
-	private global::Gtk.Label GtkLabel4;
+	private global::Gtk.Label outputFrame;
 
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
 		// Widget MainWindow
-		this.Name = "Enigma Emulator";
+		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("Enigma Emulator");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.vbox4 = new global::Gtk.VBox();
-		this.vbox4.Name = "vbox4";
-		this.vbox4.Spacing = 6;
-		// Container child vbox4.Gtk.Box+BoxChild
-		this.frame3 = new global::Gtk.Frame();
-		this.frame3.Name = "frame3";
-		this.frame3.ShadowType = ((global::Gtk.ShadowType)(0));
-		// Container child frame3.Gtk.Container+ContainerChild
-		this.GtkAlignment = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
-		this.GtkAlignment.Name = "GtkAlignment";
-		this.GtkAlignment.LeftPadding = ((uint)(12));
-		// Container child GtkAlignment.Gtk.Container+ContainerChild
-		this.vbox8 = new global::Gtk.VBox();
-		this.vbox8.Name = "vbox8";
-		this.vbox8.Spacing = 6;
-		// Container child vbox8.Gtk.Box+BoxChild
-		this.hbox6 = new global::Gtk.HBox();
-		this.hbox6.Name = "hbox6";
-		this.hbox6.Spacing = 6;
-		// Container child hbox6.Gtk.Box+BoxChild
-		this.label8 = new global::Gtk.Label();
-		this.label8.WidthRequest = 80;
-		this.label8.Name = "label8";
-		this.label8.Xalign = 0F;
-		this.label8.LabelProp = global::Mono.Unix.Catalog.GetString("Type");
-		this.hbox6.Add(this.label8);
-		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.label8]));
+		this.mainContainer = new global::Gtk.VBox();
+		this.mainContainer.Name = "mainContainer";
+		this.mainContainer.Spacing = 6;
+		// Container child mainContainer.Gtk.Box+BoxChild
+		this.reflectorFrame = new global::Gtk.Frame();
+		this.reflectorFrame.Name = "reflectorFrame";
+		this.reflectorFrame.ShadowType = ((global::Gtk.ShadowType)(0));
+		// Container child reflectorFrame.Gtk.Container+ContainerChild
+		this.reflectorAlignment = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
+		this.reflectorAlignment.Name = "reflectorAlignment";
+		this.reflectorAlignment.LeftPadding = ((uint)(12));
+		// Container child reflectorAlignment.Gtk.Container+ContainerChild
+		this.reflectorMainContainer = new global::Gtk.VBox();
+		this.reflectorMainContainer.Name = "reflectorMainContainer";
+		this.reflectorMainContainer.Spacing = 6;
+		// Container child reflectorMainContainer.Gtk.Box+BoxChild
+		this.reflectorContainer1 = new global::Gtk.HBox();
+		this.reflectorContainer1.Name = "reflectorContainer1";
+		this.reflectorContainer1.Spacing = 6;
+		// Container child reflectorContainer1.Gtk.Box+BoxChild
+		this.reflectorTypeLabel = new global::Gtk.Label();
+		this.reflectorTypeLabel.WidthRequest = 100;
+		this.reflectorTypeLabel.Name = "reflectorTypeLabel";
+		this.reflectorTypeLabel.Xalign = 0F;
+		this.reflectorTypeLabel.LabelProp = global::Mono.Unix.Catalog.GetString("Type");
+		this.reflectorContainer1.Add(this.reflectorTypeLabel);
+		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.reflectorContainer1[this.reflectorTypeLabel]));
 		w1.Position = 0;
 		w1.Expand = false;
 		w1.Fill = false;
-		// Container child hbox6.Gtk.Box+BoxChild
+		// Container child reflectorContainer1.Gtk.Box+BoxChild
 		this.reflectorType = global::Gtk.ComboBox.NewText();
 		this.reflectorType.AppendText(global::Mono.Unix.Catalog.GetString("-B-"));
 		this.reflectorType.AppendText(global::Mono.Unix.Catalog.GetString("-C-"));
-		this.reflectorType.Name = "combobox8";
+		this.reflectorType.WidthRequest = 60;
+		this.reflectorType.Name = "reflectorType";
 		this.reflectorType.Active = 0;
-		this.hbox6.Add(this.reflectorType);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.reflectorType]));
+		this.reflectorContainer1.Add(this.reflectorType);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.reflectorContainer1[this.reflectorType]));
 		w2.Position = 1;
 		w2.Expand = false;
 		w2.Fill = false;
-		this.vbox8.Add(this.hbox6);
-		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.hbox6]));
+		this.reflectorMainContainer.Add(this.reflectorContainer1);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.reflectorMainContainer[this.reflectorContainer1]));
 		w3.Position = 0;
 		w3.Expand = false;
 		w3.Fill = false;
-		// Container child vbox8.Gtk.Box+BoxChild
-		this.hbox7 = new global::Gtk.HBox();
-		this.hbox7.Name = "hbox7";
-		this.hbox7.Spacing = 6;
-		// Container child hbox7.Gtk.Box+BoxChild
-		this.label41 = new global::Gtk.Label();
-		this.label41.WidthRequest = 80;
-		this.label41.Name = "label41";
-		this.label41.Xalign = 0F;
-		this.label41.LabelProp = global::Mono.Unix.Catalog.GetString("Position");
-		this.hbox7.Add(this.label41);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.label41]));
+		// Container child reflectorMainContainer.Gtk.Box+BoxChild
+		this.reflectorContainer2 = new global::Gtk.HBox();
+		this.reflectorContainer2.Name = "reflectorContainer2";
+		this.reflectorContainer2.Spacing = 6;
+		// Container child reflectorContainer2.Gtk.Box+BoxChild
+		this.reflectorPositionLabel = new global::Gtk.Label();
+		this.reflectorPositionLabel.WidthRequest = 100;
+		this.reflectorPositionLabel.Name = "reflectorPositionLabel";
+		this.reflectorPositionLabel.Xalign = 0F;
+		this.reflectorPositionLabel.LabelProp = global::Mono.Unix.Catalog.GetString("Position");
+		this.reflectorContainer2.Add(this.reflectorPositionLabel);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.reflectorContainer2[this.reflectorPositionLabel]));
 		w4.Position = 0;
 		w4.Expand = false;
 		w4.Fill = false;
-		// Container child hbox7.Gtk.Box+BoxChild
+		// Container child reflectorContainer2.Gtk.Box+BoxChild
 		this.reflectorPosition = global::Gtk.ComboBox.NewText();
 		this.reflectorPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.reflectorPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -282,58 +297,59 @@ public partial class MainWindow
 		this.reflectorPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
 		this.reflectorPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.reflectorPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
-		this.reflectorPosition.Name = "combobox43";
+		this.reflectorPosition.WidthRequest = 60;
+		this.reflectorPosition.Name = "reflectorPosition";
 		this.reflectorPosition.Active = 0;
-		this.hbox7.Add(this.reflectorPosition);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.reflectorPosition]));
+		this.reflectorContainer2.Add(this.reflectorPosition);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.reflectorContainer2[this.reflectorPosition]));
 		w5.Position = 1;
 		w5.Expand = false;
 		w5.Fill = false;
-		this.vbox8.Add(this.hbox7);
-		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.hbox7]));
+		this.reflectorMainContainer.Add(this.reflectorContainer2);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.reflectorMainContainer[this.reflectorContainer2]));
 		w6.Position = 1;
 		w6.Expand = false;
 		w6.Fill = false;
-		this.GtkAlignment.Add(this.vbox8);
-		this.frame3.Add(this.GtkAlignment);
-		this.GtkLabel = new global::Gtk.Label();
-		this.GtkLabel.Name = "GtkLabel";
-		this.GtkLabel.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Reflector</b>");
-		this.GtkLabel.UseMarkup = true;
-		this.frame3.LabelWidget = this.GtkLabel;
-		this.vbox4.Add(this.frame3);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.frame3]));
+		this.reflectorAlignment.Add(this.reflectorMainContainer);
+		this.reflectorFrame.Add(this.reflectorAlignment);
+		this.reflectorLabel = new global::Gtk.Label();
+		this.reflectorLabel.Name = "reflectorLabel";
+		this.reflectorLabel.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Reflector</b>");
+		this.reflectorLabel.UseMarkup = true;
+		this.reflectorFrame.LabelWidget = this.reflectorLabel;
+		this.mainContainer.Add(this.reflectorFrame);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.mainContainer[this.reflectorFrame]));
 		w9.Position = 0;
 		w9.Expand = false;
 		w9.Fill = false;
-		// Container child vbox4.Gtk.Box+BoxChild
-		this.frame4 = new global::Gtk.Frame();
-		this.frame4.Name = "frame4";
-		this.frame4.ShadowType = ((global::Gtk.ShadowType)(0));
-		// Container child frame4.Gtk.Container+ContainerChild
-		this.GtkAlignment1 = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
-		this.GtkAlignment1.Name = "GtkAlignment1";
-		this.GtkAlignment1.LeftPadding = ((uint)(12));
-		// Container child GtkAlignment1.Gtk.Container+ContainerChild
-		this.vbox6 = new global::Gtk.VBox();
-		this.vbox6.Name = "vbox6";
-		this.vbox6.Spacing = 6;
-		// Container child vbox6.Gtk.Box+BoxChild
-		this.hbox9 = new global::Gtk.HBox();
-		this.hbox9.Name = "hbox9";
-		this.hbox9.Spacing = 6;
-		// Container child hbox9.Gtk.Box+BoxChild
-		this.label13 = new global::Gtk.Label();
-		this.label13.WidthRequest = 80;
-		this.label13.Name = "label13";
-		this.label13.Xalign = 0F;
-		this.label13.LabelProp = global::Mono.Unix.Catalog.GetString("Types");
-		this.hbox9.Add(this.label13);
-		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.label13]));
+		// Container child mainContainer.Gtk.Box+BoxChild
+		this.rotorFrame = new global::Gtk.Frame();
+		this.rotorFrame.Name = "rotorFrame";
+		this.rotorFrame.ShadowType = ((global::Gtk.ShadowType)(0));
+		// Container child rotorFrame.Gtk.Container+ContainerChild
+		this.rotorAlignment = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
+		this.rotorAlignment.Name = "rotorAlignment";
+		this.rotorAlignment.LeftPadding = ((uint)(12));
+		// Container child rotorAlignment.Gtk.Container+ContainerChild
+		this.rotorMainContainer = new global::Gtk.VBox();
+		this.rotorMainContainer.Name = "rotorMainContainer";
+		this.rotorMainContainer.Spacing = 6;
+		// Container child rotorMainContainer.Gtk.Box+BoxChild
+		this.rotorContainer1 = new global::Gtk.HBox();
+		this.rotorContainer1.Name = "rotorContainer1";
+		this.rotorContainer1.Spacing = 6;
+		// Container child rotorContainer1.Gtk.Box+BoxChild
+		this.rotorTypesLabel = new global::Gtk.Label();
+		this.rotorTypesLabel.WidthRequest = 100;
+		this.rotorTypesLabel.Name = "rotorTypesLabel";
+		this.rotorTypesLabel.Xalign = 0F;
+		this.rotorTypesLabel.LabelProp = global::Mono.Unix.Catalog.GetString("Types");
+		this.rotorContainer1.Add(this.rotorTypesLabel);
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.rotorContainer1[this.rotorTypesLabel]));
 		w10.Position = 0;
 		w10.Expand = false;
 		w10.Fill = false;
-		// Container child hbox9.Gtk.Box+BoxChild
+		// Container child rotorContainer1.Gtk.Box+BoxChild
 		this.rotorLeftType = global::Gtk.ComboBox.NewText();
 		this.rotorLeftType.AppendText(global::Mono.Unix.Catalog.GetString("I"));
 		this.rotorLeftType.AppendText(global::Mono.Unix.Catalog.GetString("II"));
@@ -344,14 +360,14 @@ public partial class MainWindow
 		this.rotorLeftType.AppendText(global::Mono.Unix.Catalog.GetString("VII"));
 		this.rotorLeftType.AppendText(global::Mono.Unix.Catalog.GetString("VIII"));
 		this.rotorLeftType.WidthRequest = 60;
-		this.rotorLeftType.Name = "combobox10";
+		this.rotorLeftType.Name = "rotorLeftType";
 		this.rotorLeftType.Active = 0;
-		this.hbox9.Add(this.rotorLeftType);
-		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.rotorLeftType]));
+		this.rotorContainer1.Add(this.rotorLeftType);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.rotorContainer1[this.rotorLeftType]));
 		w11.Position = 1;
 		w11.Expand = false;
 		w11.Fill = false;
-		// Container child hbox9.Gtk.Box+BoxChild
+		// Container child rotorContainer1.Gtk.Box+BoxChild
 		this.rotorCenterType = global::Gtk.ComboBox.NewText();
 		this.rotorCenterType.AppendText(global::Mono.Unix.Catalog.GetString("I"));
 		this.rotorCenterType.AppendText(global::Mono.Unix.Catalog.GetString("II"));
@@ -362,14 +378,14 @@ public partial class MainWindow
 		this.rotorCenterType.AppendText(global::Mono.Unix.Catalog.GetString("VII"));
 		this.rotorCenterType.AppendText(global::Mono.Unix.Catalog.GetString("VIII"));
 		this.rotorCenterType.WidthRequest = 60;
-		this.rotorCenterType.Name = "combobox11";
+		this.rotorCenterType.Name = "rotorCenterType";
 		this.rotorCenterType.Active = 1;
-		this.hbox9.Add(this.rotorCenterType);
-		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.rotorCenterType]));
+		this.rotorContainer1.Add(this.rotorCenterType);
+		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.rotorContainer1[this.rotorCenterType]));
 		w12.Position = 2;
 		w12.Expand = false;
 		w12.Fill = false;
-		// Container child hbox9.Gtk.Box+BoxChild
+		// Container child rotorContainer1.Gtk.Box+BoxChild
 		this.rotorRightType = global::Gtk.ComboBox.NewText();
 		this.rotorRightType.AppendText(global::Mono.Unix.Catalog.GetString("I"));
 		this.rotorRightType.AppendText(global::Mono.Unix.Catalog.GetString("II"));
@@ -380,172 +396,300 @@ public partial class MainWindow
 		this.rotorRightType.AppendText(global::Mono.Unix.Catalog.GetString("VII"));
 		this.rotorRightType.AppendText(global::Mono.Unix.Catalog.GetString("VIII"));
 		this.rotorRightType.WidthRequest = 60;
-		this.rotorRightType.Name = "combobox12";
+		this.rotorRightType.Name = "rotorRightType";
 		this.rotorRightType.Active = 2;
-		this.hbox9.Add(this.rotorRightType);
-		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.rotorRightType]));
+		this.rotorContainer1.Add(this.rotorRightType);
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.rotorContainer1[this.rotorRightType]));
 		w13.Position = 3;
 		w13.Expand = false;
 		w13.Fill = false;
-		this.vbox6.Add(this.hbox9);
-		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox9]));
+		this.rotorMainContainer.Add(this.rotorContainer1);
+		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.rotorMainContainer[this.rotorContainer1]));
 		w14.Position = 0;
 		w14.Expand = false;
 		w14.Fill = false;
-		// Container child vbox6.Gtk.Box+BoxChild
-		this.hbox10 = new global::Gtk.HBox();
-		this.hbox10.Name = "hbox10";
-		this.hbox10.Spacing = 6;
-		// Container child hbox10.Gtk.Box+BoxChild
-		this.label14 = new global::Gtk.Label();
-		this.label14.WidthRequest = 80;
-		this.label14.Name = "label14";
-		this.label14.Xalign = 0F;
-		this.label14.LabelProp = global::Mono.Unix.Catalog.GetString("Positions");
-		this.hbox10.Add(this.label14);
-		global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.label14]));
+		// Container child rotorMainContainer.Gtk.Box+BoxChild
+		this.rotorContainer2 = new global::Gtk.HBox();
+		this.rotorContainer2.Name = "rotorContainer2";
+		this.rotorContainer2.Spacing = 6;
+		// Container child rotorContainer2.Gtk.Box+BoxChild
+		this.rotorRingPositionsLabel = new global::Gtk.Label();
+		this.rotorRingPositionsLabel.WidthRequest = 100;
+		this.rotorRingPositionsLabel.Name = "rotorRingPositionsLabel";
+		this.rotorRingPositionsLabel.Xalign = 0F;
+		this.rotorRingPositionsLabel.LabelProp = global::Mono.Unix.Catalog.GetString("Ring Positions");
+		this.rotorContainer2.Add(this.rotorRingPositionsLabel);
+		global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.rotorContainer2[this.rotorRingPositionsLabel]));
 		w15.Position = 0;
 		w15.Expand = false;
 		w15.Fill = false;
-		// Container child hbox10.Gtk.Box+BoxChild
-		this.rotorLeftPosotion = global::Gtk.ComboBox.NewText();
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("A"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("B"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("C"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("D"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("E"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("F"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("G"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("H"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("I"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("J"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("K"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("L"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("M"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("N"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("O"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("P"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("R"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("S"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("T"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("U"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("V"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("W"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("X"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
-		this.rotorLeftPosotion.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
-		this.rotorLeftPosotion.WidthRequest = 60;
-		this.rotorLeftPosotion.Name = "combobox13";
-		this.rotorLeftPosotion.Active = 0;
-		this.hbox10.Add(this.rotorLeftPosotion);
-		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.rotorLeftPosotion]));
+		// Container child rotorContainer2.Gtk.Box+BoxChild
+		this.rotorLeftRingPosition = global::Gtk.ComboBox.NewText();
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
+		this.rotorLeftRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
+		this.rotorLeftRingPosition.WidthRequest = 60;
+		this.rotorLeftRingPosition.Name = "rotorLeftRingPosition";
+		this.rotorLeftRingPosition.Active = 0;
+		this.rotorContainer2.Add(this.rotorLeftRingPosition);
+		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.rotorContainer2[this.rotorLeftRingPosition]));
 		w16.Position = 1;
 		w16.Expand = false;
 		w16.Fill = false;
-		// Container child hbox10.Gtk.Box+BoxChild
-		this.rotorCenterPosition = global::Gtk.ComboBox.NewText();
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
-		this.rotorCenterPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
-		this.rotorCenterPosition.WidthRequest = 60;
-		this.rotorCenterPosition.Name = "combobox14";
-		this.rotorCenterPosition.Active = 0;
-		this.hbox10.Add(this.rotorCenterPosition);
-		global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.rotorCenterPosition]));
+		// Container child rotorContainer2.Gtk.Box+BoxChild
+		this.rotorCenterRingPosition = global::Gtk.ComboBox.NewText();
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
+		this.rotorCenterRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
+		this.rotorCenterRingPosition.WidthRequest = 60;
+		this.rotorCenterRingPosition.Name = "rotorCenterRingPosition";
+		this.rotorCenterRingPosition.Active = 0;
+		this.rotorContainer2.Add(this.rotorCenterRingPosition);
+		global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.rotorContainer2[this.rotorCenterRingPosition]));
 		w17.Position = 2;
 		w17.Expand = false;
 		w17.Fill = false;
-		// Container child hbox10.Gtk.Box+BoxChild
-		this.rotorRightPosition = global::Gtk.ComboBox.NewText();
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
-		this.rotorRightPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
-		this.rotorRightPosition.WidthRequest = 60;
-		this.rotorRightPosition.Name = "combobox15";
-		this.rotorRightPosition.Active = 0;
-		this.hbox10.Add(this.rotorRightPosition);
-		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.rotorRightPosition]));
+		// Container child rotorContainer2.Gtk.Box+BoxChild
+		this.rotorRightRingPosition = global::Gtk.ComboBox.NewText();
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
+		this.rotorRightRingPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
+		this.rotorRightRingPosition.WidthRequest = 60;
+		this.rotorRightRingPosition.Name = "rotorRightRingPosition";
+		this.rotorRightRingPosition.Active = 0;
+		this.rotorContainer2.Add(this.rotorRightRingPosition);
+		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.rotorContainer2[this.rotorRightRingPosition]));
 		w18.Position = 3;
 		w18.Expand = false;
 		w18.Fill = false;
-		this.vbox6.Add(this.hbox10);
-		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox10]));
+		this.rotorMainContainer.Add(this.rotorContainer2);
+		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.rotorMainContainer[this.rotorContainer2]));
 		w19.Position = 1;
 		w19.Expand = false;
 		w19.Fill = false;
-		this.GtkAlignment1.Add(this.vbox6);
-		this.frame4.Add(this.GtkAlignment1);
-		this.GtkLabel1 = new global::Gtk.Label();
-		this.GtkLabel1.Name = "GtkLabel1";
-		this.GtkLabel1.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Rotors</b>");
-		this.GtkLabel1.UseMarkup = true;
-		this.frame4.LabelWidget = this.GtkLabel1;
-		this.vbox4.Add(this.frame4);
-		global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.frame4]));
-		w22.Position = 1;
+		// Container child rotorMainContainer.Gtk.Box+BoxChild
+		this.rotorContainer3 = new global::Gtk.HBox();
+		this.rotorContainer3.Name = "rotorContainer3";
+		this.rotorContainer3.Spacing = 6;
+		// Container child rotorContainer3.Gtk.Box+BoxChild
+		this.rotorStartPositionsLabel = new global::Gtk.Label();
+		this.rotorStartPositionsLabel.WidthRequest = 100;
+		this.rotorStartPositionsLabel.Name = "rotorStartPositionsLabel";
+		this.rotorStartPositionsLabel.Xalign = 0F;
+		this.rotorStartPositionsLabel.LabelProp = global::Mono.Unix.Catalog.GetString("Start Positions");
+		this.rotorContainer3.Add(this.rotorStartPositionsLabel);
+		global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.rotorContainer3[this.rotorStartPositionsLabel]));
+		w20.Position = 0;
+		w20.Expand = false;
+		w20.Fill = false;
+		// Container child rotorContainer3.Gtk.Box+BoxChild
+		this.rotorLeftStartPosition = global::Gtk.ComboBox.NewText();
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
+		this.rotorLeftStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
+		this.rotorLeftStartPosition.WidthRequest = 60;
+		this.rotorLeftStartPosition.Name = "rotorLeftStartPosition";
+		this.rotorLeftStartPosition.Active = 0;
+		this.rotorContainer3.Add(this.rotorLeftStartPosition);
+		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.rotorContainer3[this.rotorLeftStartPosition]));
+		w21.Position = 1;
+		w21.Expand = false;
+		w21.Fill = false;
+		// Container child rotorContainer3.Gtk.Box+BoxChild
+		this.rotorCenterStartPosition = global::Gtk.ComboBox.NewText();
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
+		this.rotorCenterStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
+		this.rotorCenterStartPosition.WidthRequest = 60;
+		this.rotorCenterStartPosition.Name = "rotorCenterStartPosition";
+		this.rotorCenterStartPosition.Active = 0;
+		this.rotorContainer3.Add(this.rotorCenterStartPosition);
+		global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.rotorContainer3[this.rotorCenterStartPosition]));
+		w22.Position = 2;
 		w22.Expand = false;
 		w22.Fill = false;
-		// Container child vbox4.Gtk.Box+BoxChild
-		this.plugboard1 = new global::Gtk.Frame();
-		this.plugboard1.Name = "plugboard1";
-		this.plugboard1.ShadowType = ((global::Gtk.ShadowType)(0));
-		// Container child plugboard1.Gtk.Container+ContainerChild
-		this.GtkAlignment2 = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
-		this.GtkAlignment2.Name = "GtkAlignment2";
-		this.GtkAlignment2.LeftPadding = ((uint)(12));
-		// Container child GtkAlignment2.Gtk.Container+ContainerChild
-		this.plugboard_table = new global::Gtk.Table(((uint)(4)), ((uint)(13)), false);
-		this.plugboard_table.Name = "plugboard_table";
-		this.plugboard_table.RowSpacing = ((uint)(6));
-		this.plugboard_table.ColumnSpacing = ((uint)(6));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		// Container child rotorContainer3.Gtk.Box+BoxChild
+		this.rotorRightStartPosition = global::Gtk.ComboBox.NewText();
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("A"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("B"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("C"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("D"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("E"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("F"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("G"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("H"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("I"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("J"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("K"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("L"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("M"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("N"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("O"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("P"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Q"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("R"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("S"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("T"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("U"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("V"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("W"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("X"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
+		this.rotorRightStartPosition.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
+		this.rotorRightStartPosition.WidthRequest = 60;
+		this.rotorRightStartPosition.Name = "rotorRightStartPosition";
+		this.rotorRightStartPosition.Active = 0;
+		this.rotorContainer3.Add(this.rotorRightStartPosition);
+		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.rotorContainer3[this.rotorRightStartPosition]));
+		w23.Position = 3;
+		w23.Expand = false;
+		w23.Fill = false;
+		this.rotorMainContainer.Add(this.rotorContainer3);
+		global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.rotorMainContainer[this.rotorContainer3]));
+		w24.Position = 2;
+		w24.Expand = false;
+		w24.Fill = false;
+		this.rotorAlignment.Add(this.rotorMainContainer);
+		this.rotorFrame.Add(this.rotorAlignment);
+		this.rotorLabel = new global::Gtk.Label();
+		this.rotorLabel.Name = "rotorLabel";
+		this.rotorLabel.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Rotors</b>");
+		this.rotorLabel.UseMarkup = true;
+		this.rotorFrame.LabelWidget = this.rotorLabel;
+		this.mainContainer.Add(this.rotorFrame);
+		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.mainContainer[this.rotorFrame]));
+		w27.Position = 1;
+		w27.Expand = false;
+		w27.Fill = false;
+		// Container child mainContainer.Gtk.Box+BoxChild
+		this.plugboardFrame = new global::Gtk.Frame();
+		this.plugboardFrame.Name = "plugboardFrame";
+		this.plugboardFrame.ShadowType = ((global::Gtk.ShadowType)(0));
+		// Container child plugboardFrame.Gtk.Container+ContainerChild
+		this.plugboardAlignment = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
+		this.plugboardAlignment.Name = "plugboardAlignment";
+		this.plugboardAlignment.LeftPadding = ((uint)(12));
+		// Container child plugboardAlignment.Gtk.Container+ContainerChild
+		this.plugboard = new global::Gtk.Table(((uint)(4)), ((uint)(13)), false);
+		this.plugboard.Name = "plugboard";
+		this.plugboard.RowSpacing = ((uint)(6));
+		this.plugboard.ColumnSpacing = ((uint)(6));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.A = global::Gtk.ComboBox.NewText();
 		this.A.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.A.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -574,13 +718,13 @@ public partial class MainWindow
 		this.A.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.A.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.A.Name = "A";
-		this.plugboard_table.Add(this.A);
-		global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.A]));
-		w23.TopAttach = ((uint)(1));
-		w23.BottomAttach = ((uint)(2));
-		w23.XOptions = ((global::Gtk.AttachOptions)(4));
-		w23.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.A);
+		global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.plugboard[this.A]));
+		w28.TopAttach = ((uint)(1));
+		w28.BottomAttach = ((uint)(2));
+		w28.XOptions = ((global::Gtk.AttachOptions)(4));
+		w28.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.B = global::Gtk.ComboBox.NewText();
 		this.B.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.B.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -609,15 +753,15 @@ public partial class MainWindow
 		this.B.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.B.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.B.Name = "B";
-		this.plugboard_table.Add(this.B);
-		global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.B]));
-		w24.TopAttach = ((uint)(1));
-		w24.BottomAttach = ((uint)(2));
-		w24.LeftAttach = ((uint)(1));
-		w24.RightAttach = ((uint)(2));
-		w24.XOptions = ((global::Gtk.AttachOptions)(4));
-		w24.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.B);
+		global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.plugboard[this.B]));
+		w29.TopAttach = ((uint)(1));
+		w29.BottomAttach = ((uint)(2));
+		w29.LeftAttach = ((uint)(1));
+		w29.RightAttach = ((uint)(2));
+		w29.XOptions = ((global::Gtk.AttachOptions)(4));
+		w29.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.C = global::Gtk.ComboBox.NewText();
 		this.C.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.C.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -646,15 +790,15 @@ public partial class MainWindow
 		this.C.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.C.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.C.Name = "C";
-		this.plugboard_table.Add(this.C);
-		global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.C]));
-		w25.TopAttach = ((uint)(1));
-		w25.BottomAttach = ((uint)(2));
-		w25.LeftAttach = ((uint)(2));
-		w25.RightAttach = ((uint)(3));
-		w25.XOptions = ((global::Gtk.AttachOptions)(4));
-		w25.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.C);
+		global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.plugboard[this.C]));
+		w30.TopAttach = ((uint)(1));
+		w30.BottomAttach = ((uint)(2));
+		w30.LeftAttach = ((uint)(2));
+		w30.RightAttach = ((uint)(3));
+		w30.XOptions = ((global::Gtk.AttachOptions)(4));
+		w30.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.D = global::Gtk.ComboBox.NewText();
 		this.D.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.D.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -683,15 +827,15 @@ public partial class MainWindow
 		this.D.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.D.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.D.Name = "D";
-		this.plugboard_table.Add(this.D);
-		global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.D]));
-		w26.TopAttach = ((uint)(1));
-		w26.BottomAttach = ((uint)(2));
-		w26.LeftAttach = ((uint)(3));
-		w26.RightAttach = ((uint)(4));
-		w26.XOptions = ((global::Gtk.AttachOptions)(4));
-		w26.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.D);
+		global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.plugboard[this.D]));
+		w31.TopAttach = ((uint)(1));
+		w31.BottomAttach = ((uint)(2));
+		w31.LeftAttach = ((uint)(3));
+		w31.RightAttach = ((uint)(4));
+		w31.XOptions = ((global::Gtk.AttachOptions)(4));
+		w31.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.E = global::Gtk.ComboBox.NewText();
 		this.E.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.E.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -720,15 +864,15 @@ public partial class MainWindow
 		this.E.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.E.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.E.Name = "E";
-		this.plugboard_table.Add(this.E);
-		global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.E]));
-		w27.TopAttach = ((uint)(1));
-		w27.BottomAttach = ((uint)(2));
-		w27.LeftAttach = ((uint)(4));
-		w27.RightAttach = ((uint)(5));
-		w27.XOptions = ((global::Gtk.AttachOptions)(4));
-		w27.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.E);
+		global::Gtk.Table.TableChild w32 = ((global::Gtk.Table.TableChild)(this.plugboard[this.E]));
+		w32.TopAttach = ((uint)(1));
+		w32.BottomAttach = ((uint)(2));
+		w32.LeftAttach = ((uint)(4));
+		w32.RightAttach = ((uint)(5));
+		w32.XOptions = ((global::Gtk.AttachOptions)(4));
+		w32.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.F = global::Gtk.ComboBox.NewText();
 		this.F.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.F.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -757,15 +901,15 @@ public partial class MainWindow
 		this.F.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.F.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.F.Name = "F";
-		this.plugboard_table.Add(this.F);
-		global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.F]));
-		w28.TopAttach = ((uint)(1));
-		w28.BottomAttach = ((uint)(2));
-		w28.LeftAttach = ((uint)(5));
-		w28.RightAttach = ((uint)(6));
-		w28.XOptions = ((global::Gtk.AttachOptions)(4));
-		w28.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.F);
+		global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.plugboard[this.F]));
+		w33.TopAttach = ((uint)(1));
+		w33.BottomAttach = ((uint)(2));
+		w33.LeftAttach = ((uint)(5));
+		w33.RightAttach = ((uint)(6));
+		w33.XOptions = ((global::Gtk.AttachOptions)(4));
+		w33.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.G = global::Gtk.ComboBox.NewText();
 		this.G.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.G.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -794,15 +938,15 @@ public partial class MainWindow
 		this.G.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.G.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.G.Name = "G";
-		this.plugboard_table.Add(this.G);
-		global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.G]));
-		w29.TopAttach = ((uint)(1));
-		w29.BottomAttach = ((uint)(2));
-		w29.LeftAttach = ((uint)(6));
-		w29.RightAttach = ((uint)(7));
-		w29.XOptions = ((global::Gtk.AttachOptions)(4));
-		w29.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.G);
+		global::Gtk.Table.TableChild w34 = ((global::Gtk.Table.TableChild)(this.plugboard[this.G]));
+		w34.TopAttach = ((uint)(1));
+		w34.BottomAttach = ((uint)(2));
+		w34.LeftAttach = ((uint)(6));
+		w34.RightAttach = ((uint)(7));
+		w34.XOptions = ((global::Gtk.AttachOptions)(4));
+		w34.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.H = global::Gtk.ComboBox.NewText();
 		this.H.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.H.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -831,15 +975,15 @@ public partial class MainWindow
 		this.H.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.H.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.H.Name = "H";
-		this.plugboard_table.Add(this.H);
-		global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.H]));
-		w30.TopAttach = ((uint)(1));
-		w30.BottomAttach = ((uint)(2));
-		w30.LeftAttach = ((uint)(7));
-		w30.RightAttach = ((uint)(8));
-		w30.XOptions = ((global::Gtk.AttachOptions)(4));
-		w30.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.H);
+		global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.plugboard[this.H]));
+		w35.TopAttach = ((uint)(1));
+		w35.BottomAttach = ((uint)(2));
+		w35.LeftAttach = ((uint)(7));
+		w35.RightAttach = ((uint)(8));
+		w35.XOptions = ((global::Gtk.AttachOptions)(4));
+		w35.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.I = global::Gtk.ComboBox.NewText();
 		this.I.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.I.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -868,15 +1012,15 @@ public partial class MainWindow
 		this.I.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.I.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.I.Name = "I";
-		this.plugboard_table.Add(this.I);
-		global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.I]));
-		w31.TopAttach = ((uint)(1));
-		w31.BottomAttach = ((uint)(2));
-		w31.LeftAttach = ((uint)(8));
-		w31.RightAttach = ((uint)(9));
-		w31.XOptions = ((global::Gtk.AttachOptions)(4));
-		w31.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.I);
+		global::Gtk.Table.TableChild w36 = ((global::Gtk.Table.TableChild)(this.plugboard[this.I]));
+		w36.TopAttach = ((uint)(1));
+		w36.BottomAttach = ((uint)(2));
+		w36.LeftAttach = ((uint)(8));
+		w36.RightAttach = ((uint)(9));
+		w36.XOptions = ((global::Gtk.AttachOptions)(4));
+		w36.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.J = global::Gtk.ComboBox.NewText();
 		this.J.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.J.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -905,15 +1049,15 @@ public partial class MainWindow
 		this.J.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.J.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.J.Name = "J";
-		this.plugboard_table.Add(this.J);
-		global::Gtk.Table.TableChild w32 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.J]));
-		w32.TopAttach = ((uint)(1));
-		w32.BottomAttach = ((uint)(2));
-		w32.LeftAttach = ((uint)(9));
-		w32.RightAttach = ((uint)(10));
-		w32.XOptions = ((global::Gtk.AttachOptions)(4));
-		w32.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.J);
+		global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.plugboard[this.J]));
+		w37.TopAttach = ((uint)(1));
+		w37.BottomAttach = ((uint)(2));
+		w37.LeftAttach = ((uint)(9));
+		w37.RightAttach = ((uint)(10));
+		w37.XOptions = ((global::Gtk.AttachOptions)(4));
+		w37.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.K = global::Gtk.ComboBox.NewText();
 		this.K.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.K.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -942,15 +1086,15 @@ public partial class MainWindow
 		this.K.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.K.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.K.Name = "K";
-		this.plugboard_table.Add(this.K);
-		global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.K]));
-		w33.TopAttach = ((uint)(1));
-		w33.BottomAttach = ((uint)(2));
-		w33.LeftAttach = ((uint)(10));
-		w33.RightAttach = ((uint)(11));
-		w33.XOptions = ((global::Gtk.AttachOptions)(4));
-		w33.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.K);
+		global::Gtk.Table.TableChild w38 = ((global::Gtk.Table.TableChild)(this.plugboard[this.K]));
+		w38.TopAttach = ((uint)(1));
+		w38.BottomAttach = ((uint)(2));
+		w38.LeftAttach = ((uint)(10));
+		w38.RightAttach = ((uint)(11));
+		w38.XOptions = ((global::Gtk.AttachOptions)(4));
+		w38.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.L = global::Gtk.ComboBox.NewText();
 		this.L.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.L.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -979,297 +1123,297 @@ public partial class MainWindow
 		this.L.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.L.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.L.Name = "L";
-		this.plugboard_table.Add(this.L);
-		global::Gtk.Table.TableChild w34 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.L]));
-		w34.TopAttach = ((uint)(1));
-		w34.BottomAttach = ((uint)(2));
-		w34.LeftAttach = ((uint)(11));
-		w34.RightAttach = ((uint)(12));
-		w34.XOptions = ((global::Gtk.AttachOptions)(4));
-		w34.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label15 = new global::Gtk.Label();
-		this.label15.Name = "label15";
-		this.label15.LabelProp = global::Mono.Unix.Catalog.GetString("A");
-		this.plugboard_table.Add(this.label15);
-		global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label15]));
-		w35.XOptions = ((global::Gtk.AttachOptions)(4));
-		w35.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label16 = new global::Gtk.Label();
-		this.label16.Name = "label16";
-		this.label16.LabelProp = global::Mono.Unix.Catalog.GetString("B");
-		this.plugboard_table.Add(this.label16);
-		global::Gtk.Table.TableChild w36 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label16]));
-		w36.LeftAttach = ((uint)(1));
-		w36.RightAttach = ((uint)(2));
-		w36.XOptions = ((global::Gtk.AttachOptions)(4));
-		w36.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label17 = new global::Gtk.Label();
-		this.label17.Name = "label17";
-		this.label17.LabelProp = global::Mono.Unix.Catalog.GetString("C");
-		this.plugboard_table.Add(this.label17);
-		global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label17]));
-		w37.LeftAttach = ((uint)(2));
-		w37.RightAttach = ((uint)(3));
-		w37.XOptions = ((global::Gtk.AttachOptions)(4));
-		w37.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label18 = new global::Gtk.Label();
-		this.label18.Name = "label18";
-		this.label18.LabelProp = global::Mono.Unix.Catalog.GetString("D");
-		this.plugboard_table.Add(this.label18);
-		global::Gtk.Table.TableChild w38 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label18]));
-		w38.LeftAttach = ((uint)(3));
-		w38.RightAttach = ((uint)(4));
-		w38.XOptions = ((global::Gtk.AttachOptions)(4));
-		w38.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label19 = new global::Gtk.Label();
-		this.label19.Name = "label19";
-		this.label19.LabelProp = global::Mono.Unix.Catalog.GetString("E");
-		this.plugboard_table.Add(this.label19);
-		global::Gtk.Table.TableChild w39 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label19]));
-		w39.LeftAttach = ((uint)(4));
-		w39.RightAttach = ((uint)(5));
+		this.plugboard.Add(this.L);
+		global::Gtk.Table.TableChild w39 = ((global::Gtk.Table.TableChild)(this.plugboard[this.L]));
+		w39.TopAttach = ((uint)(1));
+		w39.BottomAttach = ((uint)(2));
+		w39.LeftAttach = ((uint)(11));
+		w39.RightAttach = ((uint)(12));
 		w39.XOptions = ((global::Gtk.AttachOptions)(4));
 		w39.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label20 = new global::Gtk.Label();
-		this.label20.Name = "label20";
-		this.label20.LabelProp = global::Mono.Unix.Catalog.GetString("F");
-		this.plugboard_table.Add(this.label20);
-		global::Gtk.Table.TableChild w40 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label20]));
-		w40.LeftAttach = ((uint)(5));
-		w40.RightAttach = ((uint)(6));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter = new global::Gtk.Label();
+		this.letter.Name = "letter";
+		this.letter.LabelProp = global::Mono.Unix.Catalog.GetString("A");
+		this.plugboard.Add(this.letter);
+		global::Gtk.Table.TableChild w40 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter]));
 		w40.XOptions = ((global::Gtk.AttachOptions)(4));
 		w40.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label21 = new global::Gtk.Label();
-		this.label21.Name = "label21";
-		this.label21.LabelProp = global::Mono.Unix.Catalog.GetString("G");
-		this.plugboard_table.Add(this.label21);
-		global::Gtk.Table.TableChild w41 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label21]));
-		w41.LeftAttach = ((uint)(6));
-		w41.RightAttach = ((uint)(7));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter1 = new global::Gtk.Label();
+		this.letter1.Name = "letter1";
+		this.letter1.LabelProp = global::Mono.Unix.Catalog.GetString("B");
+		this.plugboard.Add(this.letter1);
+		global::Gtk.Table.TableChild w41 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter1]));
+		w41.LeftAttach = ((uint)(1));
+		w41.RightAttach = ((uint)(2));
 		w41.XOptions = ((global::Gtk.AttachOptions)(4));
 		w41.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label22 = new global::Gtk.Label();
-		this.label22.Name = "label22";
-		this.label22.LabelProp = global::Mono.Unix.Catalog.GetString("H");
-		this.plugboard_table.Add(this.label22);
-		global::Gtk.Table.TableChild w42 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label22]));
-		w42.LeftAttach = ((uint)(7));
-		w42.RightAttach = ((uint)(8));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter10 = new global::Gtk.Label();
+		this.letter10.Name = "letter10";
+		this.letter10.LabelProp = global::Mono.Unix.Catalog.GetString("K");
+		this.plugboard.Add(this.letter10);
+		global::Gtk.Table.TableChild w42 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter10]));
+		w42.LeftAttach = ((uint)(10));
+		w42.RightAttach = ((uint)(11));
 		w42.XOptions = ((global::Gtk.AttachOptions)(4));
 		w42.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label23 = new global::Gtk.Label();
-		this.label23.Name = "label23";
-		this.label23.LabelProp = global::Mono.Unix.Catalog.GetString("I");
-		this.plugboard_table.Add(this.label23);
-		global::Gtk.Table.TableChild w43 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label23]));
-		w43.LeftAttach = ((uint)(8));
-		w43.RightAttach = ((uint)(9));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter11 = new global::Gtk.Label();
+		this.letter11.Name = "letter11";
+		this.letter11.LabelProp = global::Mono.Unix.Catalog.GetString("L");
+		this.plugboard.Add(this.letter11);
+		global::Gtk.Table.TableChild w43 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter11]));
+		w43.LeftAttach = ((uint)(11));
+		w43.RightAttach = ((uint)(12));
 		w43.XOptions = ((global::Gtk.AttachOptions)(4));
 		w43.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label24 = new global::Gtk.Label();
-		this.label24.Name = "label24";
-		this.label24.LabelProp = global::Mono.Unix.Catalog.GetString("J");
-		this.plugboard_table.Add(this.label24);
-		global::Gtk.Table.TableChild w44 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label24]));
-		w44.LeftAttach = ((uint)(9));
-		w44.RightAttach = ((uint)(10));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter12 = new global::Gtk.Label();
+		this.letter12.Name = "letter12";
+		this.letter12.LabelProp = global::Mono.Unix.Catalog.GetString("M");
+		this.plugboard.Add(this.letter12);
+		global::Gtk.Table.TableChild w44 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter12]));
+		w44.LeftAttach = ((uint)(12));
+		w44.RightAttach = ((uint)(13));
 		w44.XOptions = ((global::Gtk.AttachOptions)(4));
 		w44.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label25 = new global::Gtk.Label();
-		this.label25.Name = "label25";
-		this.label25.LabelProp = global::Mono.Unix.Catalog.GetString("K");
-		this.plugboard_table.Add(this.label25);
-		global::Gtk.Table.TableChild w45 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label25]));
-		w45.LeftAttach = ((uint)(10));
-		w45.RightAttach = ((uint)(11));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter13 = new global::Gtk.Label();
+		this.letter13.Name = "letter13";
+		this.letter13.LabelProp = global::Mono.Unix.Catalog.GetString("N");
+		this.plugboard.Add(this.letter13);
+		global::Gtk.Table.TableChild w45 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter13]));
+		w45.TopAttach = ((uint)(2));
+		w45.BottomAttach = ((uint)(3));
 		w45.XOptions = ((global::Gtk.AttachOptions)(4));
 		w45.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label26 = new global::Gtk.Label();
-		this.label26.Name = "label26";
-		this.label26.LabelProp = global::Mono.Unix.Catalog.GetString("L");
-		this.plugboard_table.Add(this.label26);
-		global::Gtk.Table.TableChild w46 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label26]));
-		w46.LeftAttach = ((uint)(11));
-		w46.RightAttach = ((uint)(12));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter14 = new global::Gtk.Label();
+		this.letter14.Name = "letter14";
+		this.letter14.LabelProp = global::Mono.Unix.Catalog.GetString("O");
+		this.plugboard.Add(this.letter14);
+		global::Gtk.Table.TableChild w46 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter14]));
+		w46.TopAttach = ((uint)(2));
+		w46.BottomAttach = ((uint)(3));
+		w46.LeftAttach = ((uint)(1));
+		w46.RightAttach = ((uint)(2));
 		w46.XOptions = ((global::Gtk.AttachOptions)(4));
 		w46.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label27 = new global::Gtk.Label();
-		this.label27.Name = "label27";
-		this.label27.LabelProp = global::Mono.Unix.Catalog.GetString("M");
-		this.plugboard_table.Add(this.label27);
-		global::Gtk.Table.TableChild w47 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label27]));
-		w47.LeftAttach = ((uint)(12));
-		w47.RightAttach = ((uint)(13));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter15 = new global::Gtk.Label();
+		this.letter15.Name = "letter15";
+		this.letter15.LabelProp = global::Mono.Unix.Catalog.GetString("P");
+		this.plugboard.Add(this.letter15);
+		global::Gtk.Table.TableChild w47 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter15]));
+		w47.TopAttach = ((uint)(2));
+		w47.BottomAttach = ((uint)(3));
+		w47.LeftAttach = ((uint)(2));
+		w47.RightAttach = ((uint)(3));
 		w47.XOptions = ((global::Gtk.AttachOptions)(4));
 		w47.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label28 = new global::Gtk.Label();
-		this.label28.Name = "label28";
-		this.label28.LabelProp = global::Mono.Unix.Catalog.GetString("N");
-		this.plugboard_table.Add(this.label28);
-		global::Gtk.Table.TableChild w48 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label28]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter16 = new global::Gtk.Label();
+		this.letter16.Name = "letter16";
+		this.letter16.LabelProp = global::Mono.Unix.Catalog.GetString("Q");
+		this.plugboard.Add(this.letter16);
+		global::Gtk.Table.TableChild w48 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter16]));
 		w48.TopAttach = ((uint)(2));
 		w48.BottomAttach = ((uint)(3));
+		w48.LeftAttach = ((uint)(3));
+		w48.RightAttach = ((uint)(4));
 		w48.XOptions = ((global::Gtk.AttachOptions)(4));
 		w48.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label29 = new global::Gtk.Label();
-		this.label29.Name = "label29";
-		this.label29.LabelProp = global::Mono.Unix.Catalog.GetString("O");
-		this.plugboard_table.Add(this.label29);
-		global::Gtk.Table.TableChild w49 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label29]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter17 = new global::Gtk.Label();
+		this.letter17.Name = "letter17";
+		this.letter17.LabelProp = global::Mono.Unix.Catalog.GetString("R");
+		this.plugboard.Add(this.letter17);
+		global::Gtk.Table.TableChild w49 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter17]));
 		w49.TopAttach = ((uint)(2));
 		w49.BottomAttach = ((uint)(3));
-		w49.LeftAttach = ((uint)(1));
-		w49.RightAttach = ((uint)(2));
+		w49.LeftAttach = ((uint)(4));
+		w49.RightAttach = ((uint)(5));
 		w49.XOptions = ((global::Gtk.AttachOptions)(4));
 		w49.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label30 = new global::Gtk.Label();
-		this.label30.Name = "label30";
-		this.label30.LabelProp = global::Mono.Unix.Catalog.GetString("P");
-		this.plugboard_table.Add(this.label30);
-		global::Gtk.Table.TableChild w50 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label30]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter18 = new global::Gtk.Label();
+		this.letter18.Name = "letter18";
+		this.letter18.LabelProp = global::Mono.Unix.Catalog.GetString("S");
+		this.plugboard.Add(this.letter18);
+		global::Gtk.Table.TableChild w50 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter18]));
 		w50.TopAttach = ((uint)(2));
 		w50.BottomAttach = ((uint)(3));
-		w50.LeftAttach = ((uint)(2));
-		w50.RightAttach = ((uint)(3));
+		w50.LeftAttach = ((uint)(5));
+		w50.RightAttach = ((uint)(6));
 		w50.XOptions = ((global::Gtk.AttachOptions)(4));
 		w50.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label31 = new global::Gtk.Label();
-		this.label31.Name = "label31";
-		this.label31.LabelProp = global::Mono.Unix.Catalog.GetString("Q");
-		this.plugboard_table.Add(this.label31);
-		global::Gtk.Table.TableChild w51 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label31]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter19 = new global::Gtk.Label();
+		this.letter19.Name = "letter19";
+		this.letter19.LabelProp = global::Mono.Unix.Catalog.GetString("T");
+		this.plugboard.Add(this.letter19);
+		global::Gtk.Table.TableChild w51 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter19]));
 		w51.TopAttach = ((uint)(2));
 		w51.BottomAttach = ((uint)(3));
-		w51.LeftAttach = ((uint)(3));
-		w51.RightAttach = ((uint)(4));
+		w51.LeftAttach = ((uint)(6));
+		w51.RightAttach = ((uint)(7));
 		w51.XOptions = ((global::Gtk.AttachOptions)(4));
 		w51.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label32 = new global::Gtk.Label();
-		this.label32.Name = "label32";
-		this.label32.LabelProp = global::Mono.Unix.Catalog.GetString("R");
-		this.plugboard_table.Add(this.label32);
-		global::Gtk.Table.TableChild w52 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label32]));
-		w52.TopAttach = ((uint)(2));
-		w52.BottomAttach = ((uint)(3));
-		w52.LeftAttach = ((uint)(4));
-		w52.RightAttach = ((uint)(5));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter2 = new global::Gtk.Label();
+		this.letter2.Name = "letter2";
+		this.letter2.LabelProp = global::Mono.Unix.Catalog.GetString("C");
+		this.plugboard.Add(this.letter2);
+		global::Gtk.Table.TableChild w52 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter2]));
+		w52.LeftAttach = ((uint)(2));
+		w52.RightAttach = ((uint)(3));
 		w52.XOptions = ((global::Gtk.AttachOptions)(4));
 		w52.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label33 = new global::Gtk.Label();
-		this.label33.Name = "label33";
-		this.label33.LabelProp = global::Mono.Unix.Catalog.GetString("S");
-		this.plugboard_table.Add(this.label33);
-		global::Gtk.Table.TableChild w53 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label33]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter20 = new global::Gtk.Label();
+		this.letter20.Name = "letter20";
+		this.letter20.LabelProp = global::Mono.Unix.Catalog.GetString("U");
+		this.plugboard.Add(this.letter20);
+		global::Gtk.Table.TableChild w53 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter20]));
 		w53.TopAttach = ((uint)(2));
 		w53.BottomAttach = ((uint)(3));
-		w53.LeftAttach = ((uint)(5));
-		w53.RightAttach = ((uint)(6));
+		w53.LeftAttach = ((uint)(7));
+		w53.RightAttach = ((uint)(8));
 		w53.XOptions = ((global::Gtk.AttachOptions)(4));
 		w53.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label34 = new global::Gtk.Label();
-		this.label34.Name = "label34";
-		this.label34.LabelProp = global::Mono.Unix.Catalog.GetString("T");
-		this.plugboard_table.Add(this.label34);
-		global::Gtk.Table.TableChild w54 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label34]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter21 = new global::Gtk.Label();
+		this.letter21.Name = "letter21";
+		this.letter21.LabelProp = global::Mono.Unix.Catalog.GetString("V");
+		this.plugboard.Add(this.letter21);
+		global::Gtk.Table.TableChild w54 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter21]));
 		w54.TopAttach = ((uint)(2));
 		w54.BottomAttach = ((uint)(3));
-		w54.LeftAttach = ((uint)(6));
-		w54.RightAttach = ((uint)(7));
+		w54.LeftAttach = ((uint)(8));
+		w54.RightAttach = ((uint)(9));
 		w54.XOptions = ((global::Gtk.AttachOptions)(4));
 		w54.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label35 = new global::Gtk.Label();
-		this.label35.Name = "label35";
-		this.label35.LabelProp = global::Mono.Unix.Catalog.GetString("U");
-		this.plugboard_table.Add(this.label35);
-		global::Gtk.Table.TableChild w55 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label35]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter22 = new global::Gtk.Label();
+		this.letter22.Name = "letter22";
+		this.letter22.LabelProp = global::Mono.Unix.Catalog.GetString("W");
+		this.plugboard.Add(this.letter22);
+		global::Gtk.Table.TableChild w55 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter22]));
 		w55.TopAttach = ((uint)(2));
 		w55.BottomAttach = ((uint)(3));
-		w55.LeftAttach = ((uint)(7));
-		w55.RightAttach = ((uint)(8));
+		w55.LeftAttach = ((uint)(9));
+		w55.RightAttach = ((uint)(10));
 		w55.XOptions = ((global::Gtk.AttachOptions)(4));
 		w55.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label36 = new global::Gtk.Label();
-		this.label36.Name = "label36";
-		this.label36.LabelProp = global::Mono.Unix.Catalog.GetString("V");
-		this.plugboard_table.Add(this.label36);
-		global::Gtk.Table.TableChild w56 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label36]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter23 = new global::Gtk.Label();
+		this.letter23.Name = "letter23";
+		this.letter23.LabelProp = global::Mono.Unix.Catalog.GetString("X");
+		this.plugboard.Add(this.letter23);
+		global::Gtk.Table.TableChild w56 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter23]));
 		w56.TopAttach = ((uint)(2));
 		w56.BottomAttach = ((uint)(3));
-		w56.LeftAttach = ((uint)(8));
-		w56.RightAttach = ((uint)(9));
+		w56.LeftAttach = ((uint)(10));
+		w56.RightAttach = ((uint)(11));
 		w56.XOptions = ((global::Gtk.AttachOptions)(4));
 		w56.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label37 = new global::Gtk.Label();
-		this.label37.Name = "label37";
-		this.label37.LabelProp = global::Mono.Unix.Catalog.GetString("W");
-		this.plugboard_table.Add(this.label37);
-		global::Gtk.Table.TableChild w57 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label37]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter24 = new global::Gtk.Label();
+		this.letter24.Name = "letter24";
+		this.letter24.LabelProp = global::Mono.Unix.Catalog.GetString("Y");
+		this.plugboard.Add(this.letter24);
+		global::Gtk.Table.TableChild w57 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter24]));
 		w57.TopAttach = ((uint)(2));
 		w57.BottomAttach = ((uint)(3));
-		w57.LeftAttach = ((uint)(9));
-		w57.RightAttach = ((uint)(10));
+		w57.LeftAttach = ((uint)(11));
+		w57.RightAttach = ((uint)(12));
 		w57.XOptions = ((global::Gtk.AttachOptions)(4));
 		w57.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label38 = new global::Gtk.Label();
-		this.label38.Name = "label38";
-		this.label38.LabelProp = global::Mono.Unix.Catalog.GetString("X");
-		this.plugboard_table.Add(this.label38);
-		global::Gtk.Table.TableChild w58 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label38]));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter25 = new global::Gtk.Label();
+		this.letter25.Name = "letter25";
+		this.letter25.LabelProp = global::Mono.Unix.Catalog.GetString("Z");
+		this.plugboard.Add(this.letter25);
+		global::Gtk.Table.TableChild w58 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter25]));
 		w58.TopAttach = ((uint)(2));
 		w58.BottomAttach = ((uint)(3));
-		w58.LeftAttach = ((uint)(10));
-		w58.RightAttach = ((uint)(11));
+		w58.LeftAttach = ((uint)(12));
+		w58.RightAttach = ((uint)(13));
 		w58.XOptions = ((global::Gtk.AttachOptions)(4));
 		w58.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label39 = new global::Gtk.Label();
-		this.label39.Name = "label39";
-		this.label39.LabelProp = global::Mono.Unix.Catalog.GetString("Y");
-		this.plugboard_table.Add(this.label39);
-		global::Gtk.Table.TableChild w59 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label39]));
-		w59.TopAttach = ((uint)(2));
-		w59.BottomAttach = ((uint)(3));
-		w59.LeftAttach = ((uint)(11));
-		w59.RightAttach = ((uint)(12));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter3 = new global::Gtk.Label();
+		this.letter3.Name = "letter3";
+		this.letter3.LabelProp = global::Mono.Unix.Catalog.GetString("D");
+		this.plugboard.Add(this.letter3);
+		global::Gtk.Table.TableChild w59 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter3]));
+		w59.LeftAttach = ((uint)(3));
+		w59.RightAttach = ((uint)(4));
 		w59.XOptions = ((global::Gtk.AttachOptions)(4));
 		w59.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
-		this.label40 = new global::Gtk.Label();
-		this.label40.Name = "label40";
-		this.label40.LabelProp = global::Mono.Unix.Catalog.GetString("Z");
-		this.plugboard_table.Add(this.label40);
-		global::Gtk.Table.TableChild w60 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.label40]));
-		w60.TopAttach = ((uint)(2));
-		w60.BottomAttach = ((uint)(3));
-		w60.LeftAttach = ((uint)(12));
-		w60.RightAttach = ((uint)(13));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter4 = new global::Gtk.Label();
+		this.letter4.Name = "letter4";
+		this.letter4.LabelProp = global::Mono.Unix.Catalog.GetString("E");
+		this.plugboard.Add(this.letter4);
+		global::Gtk.Table.TableChild w60 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter4]));
+		w60.LeftAttach = ((uint)(4));
+		w60.RightAttach = ((uint)(5));
 		w60.XOptions = ((global::Gtk.AttachOptions)(4));
 		w60.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter5 = new global::Gtk.Label();
+		this.letter5.Name = "letter5";
+		this.letter5.LabelProp = global::Mono.Unix.Catalog.GetString("F");
+		this.plugboard.Add(this.letter5);
+		global::Gtk.Table.TableChild w61 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter5]));
+		w61.LeftAttach = ((uint)(5));
+		w61.RightAttach = ((uint)(6));
+		w61.XOptions = ((global::Gtk.AttachOptions)(4));
+		w61.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter6 = new global::Gtk.Label();
+		this.letter6.Name = "letter6";
+		this.letter6.LabelProp = global::Mono.Unix.Catalog.GetString("G");
+		this.plugboard.Add(this.letter6);
+		global::Gtk.Table.TableChild w62 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter6]));
+		w62.LeftAttach = ((uint)(6));
+		w62.RightAttach = ((uint)(7));
+		w62.XOptions = ((global::Gtk.AttachOptions)(4));
+		w62.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter7 = new global::Gtk.Label();
+		this.letter7.Name = "letter7";
+		this.letter7.LabelProp = global::Mono.Unix.Catalog.GetString("H");
+		this.plugboard.Add(this.letter7);
+		global::Gtk.Table.TableChild w63 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter7]));
+		w63.LeftAttach = ((uint)(7));
+		w63.RightAttach = ((uint)(8));
+		w63.XOptions = ((global::Gtk.AttachOptions)(4));
+		w63.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter8 = new global::Gtk.Label();
+		this.letter8.Name = "letter8";
+		this.letter8.LabelProp = global::Mono.Unix.Catalog.GetString("I");
+		this.plugboard.Add(this.letter8);
+		global::Gtk.Table.TableChild w64 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter8]));
+		w64.LeftAttach = ((uint)(8));
+		w64.RightAttach = ((uint)(9));
+		w64.XOptions = ((global::Gtk.AttachOptions)(4));
+		w64.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
+		this.letter9 = new global::Gtk.Label();
+		this.letter9.Name = "letter9";
+		this.letter9.LabelProp = global::Mono.Unix.Catalog.GetString("J");
+		this.plugboard.Add(this.letter9);
+		global::Gtk.Table.TableChild w65 = ((global::Gtk.Table.TableChild)(this.plugboard[this.letter9]));
+		w65.LeftAttach = ((uint)(9));
+		w65.RightAttach = ((uint)(10));
+		w65.XOptions = ((global::Gtk.AttachOptions)(4));
+		w65.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.M = global::Gtk.ComboBox.NewText();
 		this.M.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.M.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1298,15 +1442,15 @@ public partial class MainWindow
 		this.M.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.M.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.M.Name = "M";
-		this.plugboard_table.Add(this.M);
-		global::Gtk.Table.TableChild w61 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.M]));
-		w61.TopAttach = ((uint)(1));
-		w61.BottomAttach = ((uint)(2));
-		w61.LeftAttach = ((uint)(12));
-		w61.RightAttach = ((uint)(13));
-		w61.XOptions = ((global::Gtk.AttachOptions)(4));
-		w61.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.M);
+		global::Gtk.Table.TableChild w66 = ((global::Gtk.Table.TableChild)(this.plugboard[this.M]));
+		w66.TopAttach = ((uint)(1));
+		w66.BottomAttach = ((uint)(2));
+		w66.LeftAttach = ((uint)(12));
+		w66.RightAttach = ((uint)(13));
+		w66.XOptions = ((global::Gtk.AttachOptions)(4));
+		w66.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.N = global::Gtk.ComboBox.NewText();
 		this.N.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.N.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1335,13 +1479,13 @@ public partial class MainWindow
 		this.N.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.N.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.N.Name = "N";
-		this.plugboard_table.Add(this.N);
-		global::Gtk.Table.TableChild w62 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.N]));
-		w62.TopAttach = ((uint)(3));
-		w62.BottomAttach = ((uint)(4));
-		w62.XOptions = ((global::Gtk.AttachOptions)(4));
-		w62.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.N);
+		global::Gtk.Table.TableChild w67 = ((global::Gtk.Table.TableChild)(this.plugboard[this.N]));
+		w67.TopAttach = ((uint)(3));
+		w67.BottomAttach = ((uint)(4));
+		w67.XOptions = ((global::Gtk.AttachOptions)(4));
+		w67.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.O = global::Gtk.ComboBox.NewText();
 		this.O.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.O.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1370,15 +1514,15 @@ public partial class MainWindow
 		this.O.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.O.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.O.Name = "O";
-		this.plugboard_table.Add(this.O);
-		global::Gtk.Table.TableChild w63 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.O]));
-		w63.TopAttach = ((uint)(3));
-		w63.BottomAttach = ((uint)(4));
-		w63.LeftAttach = ((uint)(1));
-		w63.RightAttach = ((uint)(2));
-		w63.XOptions = ((global::Gtk.AttachOptions)(4));
-		w63.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.O);
+		global::Gtk.Table.TableChild w68 = ((global::Gtk.Table.TableChild)(this.plugboard[this.O]));
+		w68.TopAttach = ((uint)(3));
+		w68.BottomAttach = ((uint)(4));
+		w68.LeftAttach = ((uint)(1));
+		w68.RightAttach = ((uint)(2));
+		w68.XOptions = ((global::Gtk.AttachOptions)(4));
+		w68.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.P = global::Gtk.ComboBox.NewText();
 		this.P.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.P.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1407,15 +1551,15 @@ public partial class MainWindow
 		this.P.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.P.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.P.Name = "P";
-		this.plugboard_table.Add(this.P);
-		global::Gtk.Table.TableChild w64 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.P]));
-		w64.TopAttach = ((uint)(3));
-		w64.BottomAttach = ((uint)(4));
-		w64.LeftAttach = ((uint)(2));
-		w64.RightAttach = ((uint)(3));
-		w64.XOptions = ((global::Gtk.AttachOptions)(4));
-		w64.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.P);
+		global::Gtk.Table.TableChild w69 = ((global::Gtk.Table.TableChild)(this.plugboard[this.P]));
+		w69.TopAttach = ((uint)(3));
+		w69.BottomAttach = ((uint)(4));
+		w69.LeftAttach = ((uint)(2));
+		w69.RightAttach = ((uint)(3));
+		w69.XOptions = ((global::Gtk.AttachOptions)(4));
+		w69.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.Q = global::Gtk.ComboBox.NewText();
 		this.Q.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.Q.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1444,15 +1588,15 @@ public partial class MainWindow
 		this.Q.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.Q.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.Q.Name = "Q";
-		this.plugboard_table.Add(this.Q);
-		global::Gtk.Table.TableChild w65 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.Q]));
-		w65.TopAttach = ((uint)(3));
-		w65.BottomAttach = ((uint)(4));
-		w65.LeftAttach = ((uint)(3));
-		w65.RightAttach = ((uint)(4));
-		w65.XOptions = ((global::Gtk.AttachOptions)(4));
-		w65.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.Q);
+		global::Gtk.Table.TableChild w70 = ((global::Gtk.Table.TableChild)(this.plugboard[this.Q]));
+		w70.TopAttach = ((uint)(3));
+		w70.BottomAttach = ((uint)(4));
+		w70.LeftAttach = ((uint)(3));
+		w70.RightAttach = ((uint)(4));
+		w70.XOptions = ((global::Gtk.AttachOptions)(4));
+		w70.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.R = global::Gtk.ComboBox.NewText();
 		this.R.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.R.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1481,15 +1625,15 @@ public partial class MainWindow
 		this.R.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.R.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.R.Name = "R";
-		this.plugboard_table.Add(this.R);
-		global::Gtk.Table.TableChild w66 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.R]));
-		w66.TopAttach = ((uint)(3));
-		w66.BottomAttach = ((uint)(4));
-		w66.LeftAttach = ((uint)(4));
-		w66.RightAttach = ((uint)(5));
-		w66.XOptions = ((global::Gtk.AttachOptions)(4));
-		w66.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.R);
+		global::Gtk.Table.TableChild w71 = ((global::Gtk.Table.TableChild)(this.plugboard[this.R]));
+		w71.TopAttach = ((uint)(3));
+		w71.BottomAttach = ((uint)(4));
+		w71.LeftAttach = ((uint)(4));
+		w71.RightAttach = ((uint)(5));
+		w71.XOptions = ((global::Gtk.AttachOptions)(4));
+		w71.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.S = global::Gtk.ComboBox.NewText();
 		this.S.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.S.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1518,15 +1662,15 @@ public partial class MainWindow
 		this.S.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.S.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.S.Name = "S";
-		this.plugboard_table.Add(this.S);
-		global::Gtk.Table.TableChild w67 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.S]));
-		w67.TopAttach = ((uint)(3));
-		w67.BottomAttach = ((uint)(4));
-		w67.LeftAttach = ((uint)(5));
-		w67.RightAttach = ((uint)(6));
-		w67.XOptions = ((global::Gtk.AttachOptions)(4));
-		w67.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.S);
+		global::Gtk.Table.TableChild w72 = ((global::Gtk.Table.TableChild)(this.plugboard[this.S]));
+		w72.TopAttach = ((uint)(3));
+		w72.BottomAttach = ((uint)(4));
+		w72.LeftAttach = ((uint)(5));
+		w72.RightAttach = ((uint)(6));
+		w72.XOptions = ((global::Gtk.AttachOptions)(4));
+		w72.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.T = global::Gtk.ComboBox.NewText();
 		this.T.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.T.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1555,15 +1699,15 @@ public partial class MainWindow
 		this.T.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.T.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.T.Name = "T";
-		this.plugboard_table.Add(this.T);
-		global::Gtk.Table.TableChild w68 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.T]));
-		w68.TopAttach = ((uint)(3));
-		w68.BottomAttach = ((uint)(4));
-		w68.LeftAttach = ((uint)(6));
-		w68.RightAttach = ((uint)(7));
-		w68.XOptions = ((global::Gtk.AttachOptions)(4));
-		w68.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.T);
+		global::Gtk.Table.TableChild w73 = ((global::Gtk.Table.TableChild)(this.plugboard[this.T]));
+		w73.TopAttach = ((uint)(3));
+		w73.BottomAttach = ((uint)(4));
+		w73.LeftAttach = ((uint)(6));
+		w73.RightAttach = ((uint)(7));
+		w73.XOptions = ((global::Gtk.AttachOptions)(4));
+		w73.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.U = global::Gtk.ComboBox.NewText();
 		this.U.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.U.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1592,15 +1736,15 @@ public partial class MainWindow
 		this.U.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.U.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.U.Name = "U";
-		this.plugboard_table.Add(this.U);
-		global::Gtk.Table.TableChild w69 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.U]));
-		w69.TopAttach = ((uint)(3));
-		w69.BottomAttach = ((uint)(4));
-		w69.LeftAttach = ((uint)(7));
-		w69.RightAttach = ((uint)(8));
-		w69.XOptions = ((global::Gtk.AttachOptions)(4));
-		w69.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.U);
+		global::Gtk.Table.TableChild w74 = ((global::Gtk.Table.TableChild)(this.plugboard[this.U]));
+		w74.TopAttach = ((uint)(3));
+		w74.BottomAttach = ((uint)(4));
+		w74.LeftAttach = ((uint)(7));
+		w74.RightAttach = ((uint)(8));
+		w74.XOptions = ((global::Gtk.AttachOptions)(4));
+		w74.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.V = global::Gtk.ComboBox.NewText();
 		this.V.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.V.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1629,15 +1773,15 @@ public partial class MainWindow
 		this.V.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.V.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.V.Name = "V";
-		this.plugboard_table.Add(this.V);
-		global::Gtk.Table.TableChild w70 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.V]));
-		w70.TopAttach = ((uint)(3));
-		w70.BottomAttach = ((uint)(4));
-		w70.LeftAttach = ((uint)(8));
-		w70.RightAttach = ((uint)(9));
-		w70.XOptions = ((global::Gtk.AttachOptions)(4));
-		w70.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.V);
+		global::Gtk.Table.TableChild w75 = ((global::Gtk.Table.TableChild)(this.plugboard[this.V]));
+		w75.TopAttach = ((uint)(3));
+		w75.BottomAttach = ((uint)(4));
+		w75.LeftAttach = ((uint)(8));
+		w75.RightAttach = ((uint)(9));
+		w75.XOptions = ((global::Gtk.AttachOptions)(4));
+		w75.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.W = global::Gtk.ComboBox.NewText();
 		this.W.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.W.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1666,15 +1810,15 @@ public partial class MainWindow
 		this.W.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.W.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.W.Name = "W";
-		this.plugboard_table.Add(this.W);
-		global::Gtk.Table.TableChild w71 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.W]));
-		w71.TopAttach = ((uint)(3));
-		w71.BottomAttach = ((uint)(4));
-		w71.LeftAttach = ((uint)(9));
-		w71.RightAttach = ((uint)(10));
-		w71.XOptions = ((global::Gtk.AttachOptions)(4));
-		w71.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.W);
+		global::Gtk.Table.TableChild w76 = ((global::Gtk.Table.TableChild)(this.plugboard[this.W]));
+		w76.TopAttach = ((uint)(3));
+		w76.BottomAttach = ((uint)(4));
+		w76.LeftAttach = ((uint)(9));
+		w76.RightAttach = ((uint)(10));
+		w76.XOptions = ((global::Gtk.AttachOptions)(4));
+		w76.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.X = global::Gtk.ComboBox.NewText();
 		this.X.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.X.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1703,15 +1847,15 @@ public partial class MainWindow
 		this.X.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.X.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.X.Name = "X";
-		this.plugboard_table.Add(this.X);
-		global::Gtk.Table.TableChild w72 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.X]));
-		w72.TopAttach = ((uint)(3));
-		w72.BottomAttach = ((uint)(4));
-		w72.LeftAttach = ((uint)(10));
-		w72.RightAttach = ((uint)(11));
-		w72.XOptions = ((global::Gtk.AttachOptions)(4));
-		w72.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.X);
+		global::Gtk.Table.TableChild w77 = ((global::Gtk.Table.TableChild)(this.plugboard[this.X]));
+		w77.TopAttach = ((uint)(3));
+		w77.BottomAttach = ((uint)(4));
+		w77.LeftAttach = ((uint)(10));
+		w77.RightAttach = ((uint)(11));
+		w77.XOptions = ((global::Gtk.AttachOptions)(4));
+		w77.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.Y = global::Gtk.ComboBox.NewText();
 		this.Y.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.Y.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1740,15 +1884,15 @@ public partial class MainWindow
 		this.Y.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.Y.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.Y.Name = "Y";
-		this.plugboard_table.Add(this.Y);
-		global::Gtk.Table.TableChild w73 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.Y]));
-		w73.TopAttach = ((uint)(3));
-		w73.BottomAttach = ((uint)(4));
-		w73.LeftAttach = ((uint)(11));
-		w73.RightAttach = ((uint)(12));
-		w73.XOptions = ((global::Gtk.AttachOptions)(4));
-		w73.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child plugboard_table.Gtk.Table+TableChild
+		this.plugboard.Add(this.Y);
+		global::Gtk.Table.TableChild w78 = ((global::Gtk.Table.TableChild)(this.plugboard[this.Y]));
+		w78.TopAttach = ((uint)(3));
+		w78.BottomAttach = ((uint)(4));
+		w78.LeftAttach = ((uint)(11));
+		w78.RightAttach = ((uint)(12));
+		w78.XOptions = ((global::Gtk.AttachOptions)(4));
+		w78.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child plugboard.Gtk.Table+TableChild
 		this.Z = global::Gtk.ComboBox.NewText();
 		this.Z.AppendText(global::Mono.Unix.Catalog.GetString("A"));
 		this.Z.AppendText(global::Mono.Unix.Catalog.GetString("B"));
@@ -1777,99 +1921,109 @@ public partial class MainWindow
 		this.Z.AppendText(global::Mono.Unix.Catalog.GetString("Y"));
 		this.Z.AppendText(global::Mono.Unix.Catalog.GetString("Z"));
 		this.Z.Name = "Z";
-		this.plugboard_table.Add(this.Z);
-		global::Gtk.Table.TableChild w74 = ((global::Gtk.Table.TableChild)(this.plugboard_table[this.Z]));
-		w74.TopAttach = ((uint)(3));
-		w74.BottomAttach = ((uint)(4));
-		w74.LeftAttach = ((uint)(12));
-		w74.RightAttach = ((uint)(13));
-		w74.XOptions = ((global::Gtk.AttachOptions)(4));
-		w74.YOptions = ((global::Gtk.AttachOptions)(4));
-		this.GtkAlignment2.Add(this.plugboard_table);
-		this.plugboard1.Add(this.GtkAlignment2);
-		this.GtkLabel2 = new global::Gtk.Label();
-		this.GtkLabel2.Name = "GtkLabel2";
-		this.GtkLabel2.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Plugboard</b>");
-		this.GtkLabel2.UseMarkup = true;
-		this.plugboard1.LabelWidget = this.GtkLabel2;
-		this.vbox4.Add(this.plugboard1);
-		global::Gtk.Box.BoxChild w77 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.plugboard1]));
-		w77.Position = 2;
-		w77.Expand = false;
-		w77.Fill = false;
-		// Container child vbox4.Gtk.Box+BoxChild
-		this.frame8 = new global::Gtk.Frame();
-		this.frame8.Name = "frame8";
-		this.frame8.ShadowType = ((global::Gtk.ShadowType)(0));
-		// Container child frame8.Gtk.Container+ContainerChild
-		this.GtkAlignment3 = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
-		this.GtkAlignment3.Name = "GtkAlignment3";
-		this.GtkAlignment3.LeftPadding = ((uint)(12));
-		// Container child GtkAlignment3.Gtk.Container+ContainerChild
-		this.vbox7 = new global::Gtk.VBox();
-		this.vbox7.Name = "vbox7";
-		this.vbox7.Spacing = 6;
-		// Container child vbox7.Gtk.Box+BoxChild
-		this.hbox11 = new global::Gtk.HBox();
-		this.hbox11.Name = "hbox11";
-		this.hbox11.Spacing = 6;
-		// Container child hbox11.Gtk.Box+BoxChild
-		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
-		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
-		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
-		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.inputText = new global::Gtk.TextView();
-		this.inputText.CanFocus = true;
-		this.inputText.Name = "text_input";
-		this.GtkScrolledWindow.Add(this.inputText);
-		this.hbox11.Add(this.GtkScrolledWindow);
-		global::Gtk.Box.BoxChild w79 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.GtkScrolledWindow]));
-		w79.Position = 0;
-		// Container child hbox11.Gtk.Box+BoxChild
-		this.decryptedMessage = new global::Gtk.ScrolledWindow();
-		this.decryptedMessage.CanFocus = true;
-		this.decryptedMessage.Name = "decryptedMessage";
-		this.decryptedMessage.ShadowType = ((global::Gtk.ShadowType)(1));
-		// Container child decryptedMessage.Gtk.Container+ContainerChild
-		this.outputText = new global::Gtk.TextView();
-		this.outputText.CanFocus = true;
-		this.outputText.Name = "text_output";
-		this.outputText.Editable = false;
-		this.decryptedMessage.Add(this.outputText);
-		this.hbox11.Add(this.decryptedMessage);
-		global::Gtk.Box.BoxChild w81 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.decryptedMessage]));
-		w81.Position = 1;
-		this.vbox7.Add(this.hbox11);
-		global::Gtk.Box.BoxChild w82 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.hbox11]));
-		w82.Position = 0;
-		// Container child vbox7.Gtk.Box+BoxChild
-		this.button3 = new global::Gtk.Button();
-		this.button3.CanFocus = true;
-		this.button3.Name = "button3";
-		this.button3.UseUnderline = true;
-		this.button3.Label = global::Mono.Unix.Catalog.GetString("Encrypt/Decrypt");
-		this.vbox7.Add(this.button3);
-		global::Gtk.Box.BoxChild w83 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.button3]));
-		w83.Position = 1;
+		this.plugboard.Add(this.Z);
+		global::Gtk.Table.TableChild w79 = ((global::Gtk.Table.TableChild)(this.plugboard[this.Z]));
+		w79.TopAttach = ((uint)(3));
+		w79.BottomAttach = ((uint)(4));
+		w79.LeftAttach = ((uint)(12));
+		w79.RightAttach = ((uint)(13));
+		w79.XOptions = ((global::Gtk.AttachOptions)(4));
+		w79.YOptions = ((global::Gtk.AttachOptions)(4));
+		this.plugboardAlignment.Add(this.plugboard);
+		this.plugboardFrame.Add(this.plugboardAlignment);
+		this.plugboardLabel = new global::Gtk.Label();
+		this.plugboardLabel.Name = "plugboardLabel";
+		this.plugboardLabel.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Plugboard</b>");
+		this.plugboardLabel.UseMarkup = true;
+		this.plugboardFrame.LabelWidget = this.plugboardLabel;
+		this.mainContainer.Add(this.plugboardFrame);
+		global::Gtk.Box.BoxChild w82 = ((global::Gtk.Box.BoxChild)(this.mainContainer[this.plugboardFrame]));
+		w82.Position = 2;
+		w82.Expand = false;
+		w82.Fill = false;
+		// Container child mainContainer.Gtk.Box+BoxChild
+		this.button = new global::Gtk.Button();
+		this.button.CanFocus = true;
+		this.button.Name = "button";
+		this.button.UseUnderline = true;
+		this.button.Label = global::Mono.Unix.Catalog.GetString("Encrypt/Decrypt");
+		this.mainContainer.Add(this.button);
+		global::Gtk.Box.BoxChild w83 = ((global::Gtk.Box.BoxChild)(this.mainContainer[this.button]));
+		w83.PackType = ((global::Gtk.PackType)(1));
+		w83.Position = 3;
 		w83.Expand = false;
 		w83.Fill = false;
-		this.GtkAlignment3.Add(this.vbox7);
-		this.frame8.Add(this.GtkAlignment3);
-		this.GtkLabel4 = new global::Gtk.Label();
-		this.GtkLabel4.Name = "GtkLabel4";
-		this.GtkLabel4.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Text</b>");
-		this.GtkLabel4.UseMarkup = true;
-		this.frame8.LabelWidget = this.GtkLabel4;
-		this.vbox4.Add(this.frame8);
-		global::Gtk.Box.BoxChild w86 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.frame8]));
-		w86.Position = 3;
-		this.Add(this.vbox4);
+		// Container child mainContainer.Gtk.Box+BoxChild
+		this.hbox8 = new global::Gtk.HBox();
+		this.hbox8.Name = "hbox8";
+		this.hbox8.Homogeneous = true;
+		this.hbox8.Spacing = 6;
+		// Container child hbox8.Gtk.Box+BoxChild
+		this.frame6 = new global::Gtk.Frame();
+		this.frame6.Name = "frame6";
+		this.frame6.ShadowType = ((global::Gtk.ShadowType)(0));
+		// Container child frame6.Gtk.Container+ContainerChild
+		this.GtkAlignment = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
+		this.GtkAlignment.Name = "GtkAlignment";
+		this.GtkAlignment.LeftPadding = ((uint)(12));
+		// Container child GtkAlignment.Gtk.Container+ContainerChild
+		this.inputScrolledWindow1 = new global::Gtk.ScrolledWindow();
+		this.inputScrolledWindow1.Name = "inputScrolledWindow1";
+		this.inputScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child inputScrolledWindow1.Gtk.Container+ContainerChild
+		this.inputText = new global::Gtk.TextView();
+		this.inputText.CanFocus = true;
+		this.inputText.Name = "inputText";
+		this.inputScrolledWindow1.Add(this.inputText);
+		this.GtkAlignment.Add(this.inputScrolledWindow1);
+		this.frame6.Add(this.GtkAlignment);
+		this.inputFrame = new global::Gtk.Label();
+		this.inputFrame.Name = "inputFrame";
+		this.inputFrame.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Input</b>");
+		this.inputFrame.UseMarkup = true;
+		this.frame6.LabelWidget = this.inputFrame;
+		this.hbox8.Add(this.frame6);
+		global::Gtk.Box.BoxChild w87 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.frame6]));
+		w87.Position = 0;
+		// Container child hbox8.Gtk.Box+BoxChild
+		this.frame7 = new global::Gtk.Frame();
+		this.frame7.Name = "frame7";
+		this.frame7.ShadowType = ((global::Gtk.ShadowType)(0));
+		// Container child frame7.Gtk.Container+ContainerChild
+		this.GtkAlignment1 = new global::Gtk.Alignment(0F, 0F, 1F, 1F);
+		this.GtkAlignment1.Name = "GtkAlignment1";
+		this.GtkAlignment1.LeftPadding = ((uint)(12));
+		// Container child GtkAlignment1.Gtk.Container+ContainerChild
+		this.outputScrolledWindow = new global::Gtk.ScrolledWindow();
+		this.outputScrolledWindow.Name = "outputScrolledWindow";
+		this.outputScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child outputScrolledWindow.Gtk.Container+ContainerChild
+		this.outputText = new global::Gtk.TextView();
+		this.outputText.CanFocus = true;
+		this.outputText.Name = "outputText";
+		this.outputText.Editable = false;
+		this.outputScrolledWindow.Add(this.outputText);
+		this.GtkAlignment1.Add(this.outputScrolledWindow);
+		this.frame7.Add(this.GtkAlignment1);
+		this.outputFrame = new global::Gtk.Label();
+		this.outputFrame.Name = "outputFrame";
+		this.outputFrame.LabelProp = global::Mono.Unix.Catalog.GetString("<b>Output</b>");
+		this.outputFrame.UseMarkup = true;
+		this.frame7.LabelWidget = this.outputFrame;
+		this.hbox8.Add(this.frame7);
+		global::Gtk.Box.BoxChild w91 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.frame7]));
+		w91.Position = 1;
+		this.mainContainer.Add(this.hbox8);
+		global::Gtk.Box.BoxChild w92 = ((global::Gtk.Box.BoxChild)(this.mainContainer[this.hbox8]));
+		w92.PackType = ((global::Gtk.PackType)(1));
+		w92.Position = 4;
+		this.Add(this.mainContainer);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
 		this.DefaultWidth = 712;
-		this.DefaultHeight = 459;
+		this.DefaultHeight = 594;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.Z.Changed += new global::System.EventHandler(this.SelectPlugboard);
@@ -1898,6 +2052,6 @@ public partial class MainWindow
 		this.C.Changed += new global::System.EventHandler(this.SelectPlugboard);
 		this.B.Changed += new global::System.EventHandler(this.SelectPlugboard);
 		this.A.Changed += new global::System.EventHandler(this.SelectPlugboard);
-		this.button3.Clicked += new global::System.EventHandler(this.ButtonClick);
+		this.button.Clicked += new global::System.EventHandler(this.ButtonClick);
 	}
 }

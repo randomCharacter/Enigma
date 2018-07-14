@@ -127,7 +127,7 @@ public partial class MainWindow : Gtk.Window
     /// </summary>
     /// <param name="code">Reflector code.</param>
     /// <returns>Reflector with given code.</returns>
-    private static Reflector AssignReflector(String code)
+    private static Reflector AssignReflector(string code)
     {
         switch (code)
         {
@@ -145,7 +145,7 @@ public partial class MainWindow : Gtk.Window
     /// </summary>
     /// <param name="code">String value of cipher.</param>
     /// <returns>Array value of cipher.</returns>
-    private static int[] BuildPlugboardCipher(String code)
+    private static int[] BuildPlugboardCipher(string code)
     {
         var cipher = new int[code.Length];
         for (var i = 0; i < code.Length; i++)
@@ -161,11 +161,10 @@ public partial class MainWindow : Gtk.Window
 
         var value = ((ComboBox)sender).Name;
         var key = ((ComboBox)sender).ActiveText;
-        foreach (var box in plugboard_table)
+        foreach (var box in plugboard)
         {
-            if (box is ComboBox)
+            if (box is ComboBox combo)
             {
-                var combo = box as ComboBox;
                 if (combo.Name == key)
                 {
                     combo.Active = value[0] - 'A';
@@ -195,12 +194,17 @@ public partial class MainWindow : Gtk.Window
         BuildPlugboard(plugboardCipher);
         
         var posRef = reflectorPosition.Active;
-        var posLeft = rotorLeftPosotion.Active;
-        var posCenter = rotorCenterPosition.Active;
-        var posRight = rotorRightPosition.Active;
+        var startLeft = rotorLeftStartPosition.Active;
+        var startCenter = rotorCenterStartPosition.Active;
+        var startRight = rotorRightStartPosition.Active;
 
+        var ringLeft = rotorLeftRingPosition.Active;
+        var ringCenter = rotorCenterRingPosition.Active;
+        var ringRight = rotorRightRingPosition.Active;
+        
         var machine = new Enigma.Enigma(_plugboard, left, center, right, reflector);
-        machine.SetPositions(posRef, posLeft, posCenter, posRight);
+        machine.SetRingPositions(posRef, ringLeft, ringCenter, ringRight);
+        machine.SetPositions(startLeft, startCenter, startRight);
 
         var message = inputText.Buffer.Text;
         var messageLetters = "";
